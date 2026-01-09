@@ -1,0 +1,38 @@
+# Netlify configuration file
+# This file is optional but recommended for better control over deployment
+
+[build]
+  # No build command needed for static site
+  publish = "."
+
+# Redirect rules (optional)
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+# Custom headers for security (optional)
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache static assets
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# HTML files should not be cached
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
