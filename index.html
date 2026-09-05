@@ -1,187 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SnoreCatcher - Privacy-first night snoring monitoring iOS App">
-    <title>SnoreCatcher - Night Snoring Monitor</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnoreCatcher - Privacy-First Night Snoring Monitor for iOS</title>
+  <meta name="description" content="SnoreCatcher is an intelligent, privacy-first night snoring monitor for iOS. Powered by SoundAnalysis ML and low-power audio DSP. 100% on-device processing.">
+  <meta property="og:title" content="SnoreCatcher - Night Snoring Monitor">
+  <meta property="og:description" content="Intelligent, privacy-first night snoring monitor for iOS. 100% on-device local storage.">
+  <meta property="og:image" content="assets/app_icon.png">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="assets/app_icon.png">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <h1>SnoreCatcher</h1>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#privacy">Privacy</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Navigation Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="brand-badge">
+        <img src="assets/app_icon.png" alt="SnoreCatcher App Icon">
+        <span class="brand-name">SnoreCatcher</span>
+        <span class="version-pill">v1.0.4 · iOS 17+</span>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+          <li><a href="#simulator" data-i18n="navDemo">Live Lab</a></li>
+          <li><a href="privacy.html" data-i18n="navPrivacy">Privacy</a></li>
+          <li><a href="terms.html" data-i18n="navTerms">Terms</a></li>
+        </ul>
+        <button id="langToggle" class="lang-btn">中文</button>
+        <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="cta-nav" data-i18n="ctaGetApp">Get App</a>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">SnoreCatcher</h1>
-                    <p class="hero-subtitle">Privacy-first Night Snoring Monitor</p>
-                    <p class="hero-description">
-                        A lightweight iOS app that uses your phone's microphone to automatically capture and save night snoring audio clips.
-                        All data stays on your device, focused on snoring monitoring without unnecessary features.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="https://apps.apple.com/app/snorecatcher" class="btn btn-primary" target="_blank">
-                            <span class="app-store-badge">Download App</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features" class="features">
-            <div class="container">
-                <h2 class="section-title">Core Features</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">🔒</div>
-                        <h3>Privacy First</h3>
-                        <p>All audio data is stored locally on your device and never uploaded to the cloud. Your privacy is fully protected.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🤖</div>
-                        <h3>AI-Powered Detection</h3>
-                        <p>Uses iOS native SoundAnalysis framework, combining decibel triggers and AI classification to accurately identify snoring sounds.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📱</div>
-                        <h3>Background Monitoring</h3>
-                        <p>Supports background monitoring even when your phone is locked, ensuring no snoring episodes are missed.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">📊</div>
-                        <h3>History Records</h3>
-                        <p>Automatically saves recording clips, organized by date, with playback and waveform display support.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">⚡</div>
-                        <h3>Low Power Design</h3>
-                        <p>Optimized audio engine minimizes CPU usage and battery consumption. Recommended to use while charging.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🎯</div>
-                        <h3>Focused & Simple</h3>
-                        <p>Dedicated to snoring monitoring only, without extra sleep aid or analysis features. Simple and easy to use.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Target Users Section -->
-        <section class="target-users">
-            <div class="container">
-                <h2 class="section-title">Who It's For</h2>
-                <div class="users-grid">
-                    <div class="user-card">
-                        <h3>Snore Suspects</h3>
-                        <p>Want to confirm whether you actually snore at night</p>
-                    </div>
-                    <div class="user-card">
-                        <h3>Anti-Snore Tryers</h3>
-                        <p>Have tried anti-snore products (like nose strips, side-sleeping pillows) and want to verify their effectiveness</p>
-                    </div>
-                    <div class="user-card">
-                        <h3>Partners Affected</h3>
-                        <p>Complained by family members about snoring and need evidence to help assess severity</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- How It Works Section -->
-        <section class="how-it-works">
-            <div class="container">
-                <h2 class="section-title">How It Works</h2>
-                <div class="process-steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <h3>Low Power Listening</h3>
-                        <p>Continuously monitors environmental sound levels and triggers when exceeding threshold for 0.5 seconds</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <h3>AI Verification</h3>
-                        <p>Uses SoundAnalysis framework for audio classification to confirm it's a snoring sound</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <h3>Smart Recording</h3>
-                        <p>Preserves 3 seconds of audio before trigger and only writes to file when snoring is confirmed</p>
-                    </div>
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <h3>Local Storage</h3>
-                        <p>Uses AAC compression encoding, automatically saves to device local storage, retains last 7 days by default</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Privacy Section -->
-        <section id="privacy" class="privacy-highlight">
-            <div class="container">
-                <h2 class="section-title">Privacy Commitment</h2>
-                <div class="privacy-content">
-                    <p class="privacy-statement">
-                        <strong>Data Never Leaves Your Device</strong> - All audio processing and storage is completed locally on your device,
-                        and never uploaded to any server. This is our core principle.
-                    </p>
-                    <p>
-                        We use AdMob to display ads to support app development. AdMob may collect some anonymous data for ad personalization.
-                        See our <a href="privacy.html">Privacy Policy page</a> for detailed information.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Download Section -->
-        <section class="download">
-            <div class="container">
-                <h2 class="section-title">Get Started</h2>
-                <p class="download-description">Download SnoreCatcher from the App Store and start monitoring your night snoring</p>
-                <a href="https://apps.apple.com/app/snorecatcher" class="btn btn-primary btn-large" target="_blank">
-                    <span class="app-store-badge">Download on App Store</span>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>SnoreCatcher</h3>
-                    <p>Privacy-first night snoring monitor</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="#features">Features</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Developer</h4>
-                    <p>For questions or suggestions, please contact the developer</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 SnoreCatcher. All rights reserved.</p>
-            </div>
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-pill">
+          <span class="pulse-dot"></span>
+          <span data-i18n="heroBadge">100% On-Device Sound ML · Zero Cloud Upload</span>
         </div>
-    </footer>
+        <h1 class="hero-title" data-i18n="heroTitle">Privacy-First Night Snoring Monitor</h1>
+        <p class="hero-subtitle" data-i18n="heroSubtitle">
+          Automatically capture and review nighttime snoring audio clips with Apple SoundAnalysis machine learning. Ultra low power consumption, intelligent decibel triggers, and 100% local sandbox privacy.
+        </p>
+        <div class="hero-actions">
+          <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="btn-appstore">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.93.04-2.02.63-2.67 1.38-.56.65-1.07 1.71-.93 2.74 1.05.08 2.08-.54 2.68-1.25z"/>
+            </svg>
+            <span data-i18n="heroDownload">Download on App Store</span>
+          </a>
+          <a href="#simulator" class="btn-secondary" data-i18n="heroExploreDemo">
+            <span>Explore Sound Lab</span> &darr;
+          </a>
+        </div>
+
+        <!-- Interactive Audio & Decibel Simulator -->
+        <div class="interactive-simulator" id="simulator">
+          <div class="sim-header">
+            <div class="sim-status">
+              <span class="status-badge" id="simStatusText" data-i18n="simListening">● PASSIVE MONITORING</span>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary);" id="dBDisplay">34 dB (Ambient)</span>
+            </div>
+            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+              Apple SoundAnalysis DSP Emulation
+            </div>
+          </div>
+
+          <div class="waveform-canvas-wrapper">
+            <canvas id="waveformCanvas" width="800" height="140"></canvas>
+          </div>
+
+          <div class="sim-controls">
+            <div class="control-card">
+              <div class="control-label">
+                <span data-i18n="labelThreshold">Trigger Sensitivity Threshold</span>
+                <span id="thresholdVal" style="color: var(--accent-cyan); font-family: var(--font-mono); font-weight: 600;">55 dB</span>
+              </div>
+              <input type="range" class="threshold-slider" id="thresholdSlider" min="40" max="85" value="55">
+            </div>
+
+            <div class="control-card">
+              <div class="control-label">
+                <span data-i18n="labelSimulator">Interactive Simulation Trigger</span>
+                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald);">Web Audio Ready</span>
+              </div>
+              <div class="trigger-actions">
+                <button class="sim-btn" id="btnSnore" data-i18n="btnTriggerSnore">💨 Simulate Snore Spike</button>
+                <button class="sim-btn" id="btnAmbient" data-i18n="btnTriggerAmbient">🌙 Ambient Quiet</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-i18n="featuresTag">ENGINEERED FOR REST</span>
+          <h2 class="section-title" data-i18n="featuresTitle">Smart Monitoring Without Compromise</h2>
+          <p class="section-desc" data-i18n="featuresDesc">Focused specifically on recording authentic snoring episodes, avoiding sleep bloat, and protecting user privacy.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🔒</div>
+            <h3 data-i18n="feat1Title">100% Local Privacy</h3>
+            <p data-i18n="feat1Desc">Audio waveforms and AAC recordings are stored strictly inside your iOS app sandbox. No accounts, no cloud sync, and zero voice surveillance.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🧠</div>
+            <h3 data-i18n="feat2Title">SoundAnalysis ML</h3>
+            <p data-i18n="feat2Desc">Combines decibel amplitude triggers with iOS native SoundAnalysis audio classification to distinguish real snoring from room noises.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🔋</div>
+            <h3 data-i18n="feat3Title">Low-Power Overnight DSP</h3>
+            <p data-i18n="feat3Desc">High-efficiency circular buffer audio engine uses minimal CPU and battery during sleep. Safe for all-night nightstand monitoring.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📱</div>
+            <h3 data-i18n="feat4Title">Background Lock Screen</h3>
+            <p data-i18n="feat4Desc">Runs silently even when the iPhone screen is locked. Pre-buffers 3 seconds before each trigger so you never miss the onset of an episode.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">📊</div>
+            <h3 data-i18n="feat5Title">Timeline & Waveforms</h3>
+            <p data-i18n="feat5Desc">Visual audio spectrogram playback, organized by calendar date. Easily listen to your snoring clips or export them for medical reference.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">🎯</div>
+            <h3 data-i18n="feat6Title">Zero Gimmicks & Bloat</h3>
+            <p data-i18n="feat6Desc">No intrusive social feeds, endless upsells, or fake sleep scores. A clean, reliable utility built to do one essential job exceptionally well.</p>
+          </div>
+        </div>
+
+        <!-- Privacy Banner -->
+        <div class="privacy-banner">
+          <div class="privacy-info">
+            <h3 data-i18n="privBannerTitle">Built on Strict Device Sandbox Integrity</h3>
+            <p data-i18n="privBannerDesc">
+              SnoreCatcher requests microphone access purely to perform real-time local decibel metering and snore identification. Audio never leaves your physical phone. Full compliance with Apple ATT, GDPR, and Google AdMob.
+            </p>
+          </div>
+          <a href="privacy.html" class="btn-secondary" data-i18n="privBannerBtn">Read Full Privacy Policy &rarr;</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>SnoreCatcher</h4>
+          <p data-i18n="footerTagline">Intelligent, privacy-first nighttime snoring capture & sleep audio monitoring utility for iOS.</p>
+        </div>
+        <div class="footer-links-col">
+          <h5 data-i18n="footerLegal">Legal & Compliance</h5>
+          <ul>
+            <li><a href="privacy.html" data-i18n="navPrivacy">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="navTerms">Terms of Use</a></li>
+            <li><a href="app-ads.txt">app-ads.txt</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h5 data-i18n="footerSupport">Support & Feedback</h5>
+          <ul>
+            <li><a href="mailto:fangdev1063@gmail.com">fangdev1063@gmail.com</a></li>
+            <li><a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener">App Store (ID: 6757622696)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 SnoreCatcher · All rights reserved. Designed for iOS 17+.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bilingual & Interactive Script -->
+  <script>
+    const i18n = {
+      en: {
+        navFeatures: "Features",
+        navDemo: "Live Lab",
+        navPrivacy: "Privacy",
+        navTerms: "Terms",
+        ctaGetApp: "Get App",
+        heroBadge: "100% On-Device Sound ML · Zero Cloud Upload",
+        heroTitle: "Privacy-First Night Snoring Monitor",
+        heroSubtitle: "Automatically capture and review nighttime snoring audio clips with Apple SoundAnalysis machine learning. Ultra low power consumption, intelligent decibel triggers, and 100% local sandbox privacy.",
+        heroDownload: "Download on App Store",
+        heroExploreDemo: "Explore Sound Lab",
+        simListening: "● PASSIVE MONITORING",
+        simSnoreDetected: "⚠️ SNORE EPISODE CAPTURED",
+        labelThreshold: "Trigger Sensitivity Threshold",
+        labelSimulator: "Interactive Simulation Trigger",
+        btnTriggerSnore: "💨 Simulate Snore Spike",
+        btnTriggerAmbient: "🌙 Ambient Quiet",
+        featuresTag: "ENGINEERED FOR REST",
+        featuresTitle: "Smart Monitoring Without Compromise",
+        featuresDesc: "Focused specifically on recording authentic snoring episodes, avoiding sleep bloat, and protecting user privacy.",
+        feat1Title: "100% Local Privacy",
+        feat1Desc: "Audio waveforms and AAC recordings are stored strictly inside your iOS app sandbox. No accounts, no cloud sync, and zero voice surveillance.",
+        feat2Title: "SoundAnalysis ML",
+        feat2Desc: "Combines decibel amplitude triggers with iOS native SoundAnalysis audio classification to distinguish real snoring from room noises.",
+        feat3Title: "Low-Power Overnight DSP",
+        feat3Desc: "High-efficiency circular buffer audio engine uses minimal CPU and battery during sleep. Safe for all-night nightstand monitoring.",
+        feat4Title: "Background Lock Screen",
+        feat4Desc: "Runs silently even when the iPhone screen is locked. Pre-buffers 3 seconds before each trigger so you never miss the onset of an episode.",
+        feat5Title: "Timeline & Waveforms",
+        feat5Desc: "Visual audio spectrogram playback, organized by calendar date. Easily listen to your snoring clips or export them for medical reference.",
+        feat6Title: "Zero Gimmicks & Bloat",
+        feat6Desc: "No intrusive social feeds, endless upsells, or fake sleep scores. A clean, reliable utility built to do one essential job exceptionally well.",
+        privBannerTitle: "Built on Strict Device Sandbox Integrity",
+        privBannerDesc: "SnoreCatcher requests microphone access purely to perform real-time local decibel metering and snore identification. Audio never leaves your physical phone. Full compliance with Apple ATT, GDPR, and Google AdMob.",
+        privBannerBtn: "Read Full Privacy Policy →",
+        footerTagline: "Intelligent, privacy-first nighttime snoring capture & sleep audio monitoring utility for iOS.",
+        footerLegal: "Legal & Compliance",
+        footerSupport: "Support & Feedback"
+      },
+      zh: {
+        navFeatures: "核心功能",
+        navDemo: "声学实验室",
+        navPrivacy: "隐私政策",
+        navTerms: "服务条款",
+        ctaGetApp: "获取应用",
+        heroBadge: "100% 本地端侧声学算法 · 零云端上传",
+        heroTitle: "守护隐私的夜间鼾声监测专家",
+        heroSubtitle: "基于 Apple 原生 SoundAnalysis 机器学习算法，在手机端自动捕获并分析夜间打鼾音频片段。超低功耗 DSP 引擎、智能分贝阈值触发，全程本地沙盒守护。",
+        heroDownload: "前往 App Store 下载",
+        heroExploreDemo: "体验声学模拟器",
+        simListening: "● 静音守候监测中",
+        simSnoreDetected: "⚠️ 捕获到特征鼾声事件",
+        labelThreshold: "智能触发灵敏度阈值",
+        labelSimulator: "互动声学场景模拟",
+        btnTriggerSnore: "💨 模拟打鼾突发",
+        btnTriggerAmbient: "🌙 恢复夜间静音",
+        featuresTag: "专为安心睡眠设计",
+        featuresTitle: "专注纯粹，不向隐私妥协",
+        featuresDesc: "专精于真实鼾声片段的智能捕捉与清晰回放，杜绝多余营销冗余，彻底捍卫您的个人声学隐私。",
+        feat1Title: "100% 本地沙盒隐私",
+        feat1Desc: "录音片段与波形数据严格保存在 iOS 设备本地沙盒，无需注册账号，无需上传云端，彻底免除私密声音泄露担忧。",
+        feat2Title: "SoundAnalysis 智能甄别",
+        feat2Desc: "结合瞬时分贝跃变与苹果官方音频分类机器学习模型，精准过滤翻身床响与环境噪音，仅留存真实打鼾声。",
+        feat3Title: "整夜超低功耗引擎",
+        feat3Desc: "采用高效率环形缓冲音频管线，大幅降低夜间 CPU 占用与电量消耗，床头安心监测一整晚。",
+        feat4Title: "支持锁屏后台监听",
+        feat4Desc: "即使 iPhone 锁屏也能静默稳定工作，自带 3 秒事件前预缓存技术，完整捕捉打鼾全过程。",
+        feat5Title: "日历回放与波形时间线",
+        feat5Desc: "按睡眠日期直观整理录音时间戳，支持高精波形回放与剪辑导出，方便自我健康评估或就医时作为参考。",
+        feat6Title: "零套路 · 极简轻量",
+        feat6Desc: "没有眼花缭乱的虚假睡眠评分和繁琐社区，专精于将鼾声捕获这一件事做到极致稳定与可靠。",
+        privBannerTitle: "原生沙盒级隐私保护规范",
+        privBannerDesc: "SnoreCatcher 仅在本地获取麦克风音频流用于实时分贝测算与打鼾特征识别，录音绝不上传任何云端服务器。严格符合苹果 ATT 隐私框架、GDPR 及 Google AdMob 广告合规要求。",
+        privBannerBtn: "查阅完整隐私政策 →",
+        footerTagline: "专为 iOS 打造的高可靠、低功耗、全本地夜间鼾声监测工具。",
+        footerLegal: "合规与政策",
+        footerSupport: "技术支持与联络"
+      }
+    };
+
+    let currentLang = 'en';
+    const langBtn = document.getElementById('langToggle');
+
+    function updateLanguage(lang) {
+      currentLang = lang;
+      langBtn.textContent = lang === 'en' ? '中文' : 'English';
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) {
+          el.textContent = i18n[lang][key];
+        }
+      });
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    }
+
+    langBtn.addEventListener('click', () => {
+      updateLanguage(currentLang === 'en' ? 'zh' : 'en');
+    });
+
+    // Waveform & Decibel Simulator Canvas
+    const canvas = document.getElementById('waveformCanvas');
+    const ctx = canvas.getContext('2d');
+    const dBDisplay = document.getElementById('dBDisplay');
+    const thresholdSlider = document.getElementById('thresholdSlider');
+    const thresholdVal = document.getElementById('thresholdVal');
+    const simStatusText = document.getElementById('simStatusText');
+    const btnSnore = document.getElementById('btnSnore');
+    const btnAmbient = document.getElementById('btnAmbient');
+
+    let isSnoring = false;
+    let threshold = parseInt(thresholdSlider.value, 10);
+    let currentDB = 34;
+    let points = new Array(80).fill(0);
+    let audioCtx = null;
+
+    thresholdSlider.addEventListener('input', (e) => {
+      threshold = parseInt(e.target.value, 10);
+      thresholdVal.textContent = `${threshold} dB`;
+    });
+
+    function playSimulatedAudio(snore) {
+      try {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (audioCtx.state === 'suspended') audioCtx.resume();
+        const osc = audioCtx.createOscillator();
+        const gain = audioCtx.createGain();
+        osc.connect(gain);
+        gain.connect(audioCtx.destination);
+
+        if (snore) {
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(95, audioCtx.currentTime);
+          osc.frequency.exponentialRampToValueAtTime(140, audioCtx.currentTime + 0.35);
+          osc.frequency.exponentialRampToValueAtTime(75, audioCtx.currentTime + 0.7);
+          gain.gain.setValueAtTime(0.01, audioCtx.currentTime);
+          gain.gain.linearRampToValueAtTime(0.12, audioCtx.currentTime + 0.2);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.8);
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.85);
+        } else {
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(220, audioCtx.currentTime);
+          gain.gain.setValueAtTime(0.02, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15);
+          osc.start();
+          osc.stop(audioCtx.currentTime + 0.18);
+        }
+      } catch (err) {}
+    }
+
+    btnSnore.addEventListener('click', () => {
+      isSnoring = true;
+      btnSnore.classList.add('active');
+      btnAmbient.classList.remove('active');
+      playSimulatedAudio(true);
+      setTimeout(() => {
+        isSnoring = false;
+        btnSnore.classList.remove('active');
+      }, 2500);
+    });
+
+    btnAmbient.addEventListener('click', () => {
+      isSnoring = false;
+      btnSnore.classList.remove('active');
+      btnAmbient.classList.add('active');
+      playSimulatedAudio(false);
+      setTimeout(() => btnAmbient.classList.remove('active'), 1000);
+    });
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      const w = canvas.width;
+      const h = canvas.height;
+      const mid = h / 2;
+
+      // Calculate target dB & wave amplitude
+      let targetDB = isSnoring ? (68 + Math.random() * 12) : (32 + Math.random() * 4);
+      currentDB += (targetDB - currentDB) * 0.15;
+      dBDisplay.textContent = `${Math.round(currentDB)} dB ${isSnoring ? '(Snoring)' : '(Ambient)'}`;
+
+      const triggered = currentDB >= threshold;
+      if (triggered) {
+        simStatusText.textContent = currentLang === 'zh' ? '⚠️ 捕获到特征鼾声事件' : '⚠️ SNORE EPISODE CAPTURED';
+        simStatusText.style.color = '#ef4444';
+        simStatusText.style.background = 'rgba(239, 68, 68, 0.18)';
+        simStatusText.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+      } else {
+        simStatusText.textContent = currentLang === 'zh' ? '● 静音守候监测中' : '● PASSIVE MONITORING';
+        simStatusText.style.color = 'var(--accent-emerald)';
+        simStatusText.style.background = 'rgba(16, 185, 129, 0.15)';
+        simStatusText.style.borderColor = 'rgba(16, 185, 129, 0.3)';
+      }
+
+      // Shift points
+      const newAmp = isSnoring ? (Math.random() * 45 + 15) : (Math.random() * 4 + 2);
+      points.push(newAmp);
+      points.shift();
+
+      // Threshold Line
+      const threshY = mid - (threshold / 100) * (mid - 10);
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(239, 68, 68, 0.4)';
+      ctx.lineWidth = 1;
+      ctx.setLineDash([4, 4]);
+      ctx.moveTo(0, threshY);
+      ctx.lineTo(w, threshY);
+      ctx.stroke();
+      ctx.setLineDash([]);
+
+      // Center Line
+      ctx.beginPath();
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+      ctx.lineWidth = 1;
+      ctx.moveTo(0, mid);
+      ctx.lineTo(w, mid);
+      ctx.stroke();
+
+      // Waveform bars
+      const barW = w / points.length;
+      for (let i = 0; i < points.length; i++) {
+        const x = i * barW;
+        const amp = points[i];
+        const barH = amp * 1.5;
+
+        const grad = ctx.createLinearGradient(0, mid - barH, 0, mid + barH);
+        if (triggered) {
+          grad.addColorStop(0, 'rgba(244, 63, 94, 0.8)');
+          grad.addColorStop(0.5, 'rgba(6, 182, 212, 0.9)');
+          grad.addColorStop(1, 'rgba(244, 63, 94, 0.8)');
+        } else {
+          grad.addColorStop(0, 'rgba(6, 182, 212, 0.4)');
+          grad.addColorStop(0.5, 'rgba(16, 185, 129, 0.7)');
+          grad.addColorStop(1, 'rgba(6, 182, 212, 0.4)');
+        }
+
+        ctx.fillStyle = grad;
+        ctx.fillRect(x, mid - barH, barW - 2, barH * 2);
+      }
+
+      requestAnimationFrame(draw);
+    }
+    requestAnimationFrame(draw);
+  </script>
 </body>
 </html>

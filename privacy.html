@@ -1,217 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="SnoreCatcher Privacy Policy">
-    <title>Privacy Policy - SnoreCatcher</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - SnoreCatcher</title>
+  <meta name="description" content="Privacy Policy for SnoreCatcher iOS Application. 100% on-device processing, sandbox local storage, and AdMob compliance.">
+  <link rel="icon" type="image/png" href="assets/app_icon.png">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .legal-page {
+      padding: 60px 0 100px;
+    }
+    .legal-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: clamp(24px, 5vw, 48px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
+    }
+    .legal-card h1 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+      color: #fff;
+    }
+    .legal-date {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent-cyan);
+      margin-bottom: 36px;
+      display: block;
+    }
+    .legal-section {
+      margin-bottom: 36px;
+    }
+    .legal-section h2 {
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 14px;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 8px;
+    }
+    .legal-section h3 {
+      font-size: 1.1rem;
+      color: var(--accent-cyan);
+      margin: 18px 0 8px;
+    }
+    .legal-section p {
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+    .legal-section ul {
+      color: var(--text-secondary);
+      margin-left: 24px;
+      margin-bottom: 14px;
+      line-height: 1.7;
+    }
+    .legal-section li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      margin: 20px 0;
+      color: #fff;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <a href="index.html"><h1>SnoreCatcher</h1></a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container nav-container">
+      <div class="brand-badge">
+        <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
+          <img src="assets/app_icon.png" alt="SnoreCatcher Icon">
+          <span class="brand-name">SnoreCatcher</span>
+        </a>
+      </div>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="privacy.html" style="color: var(--accent-cyan);">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Use</a></li>
+        </ul>
+        <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="cta-nav">App Store</a>
+      </div>
+    </div>
+  </header>
 
-    <main>
-        <section class="privacy-policy">
-            <div class="container">
-                <h1>Privacy Policy</h1>
-                <p class="last-updated">Last Updated: January 9, 2026</p>
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-card">
+        <h1>Privacy Policy</h1>
+        <span class="legal-date">Last Updated: January 19, 2026</span>
 
-                <div class="policy-content">
-                    <section class="policy-section">
-                        <h2>1. Overview</h2>
-                        <p>
-                            SnoreCatcher ("we", "our app") takes your privacy seriously. This Privacy Policy explains how we collect, use, and protect your personal information.
-                        </p>
-                        <p>
-                            <strong>Core Principle: Data Never Leaves Your Device.</strong> This is the fundamental principle behind SnoreCatcher's development.
-                        </p>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>2. Information We Collect</h2>
-                        
-                        <h3>2.1 Audio Data</h3>
-                        <ul>
-                            <li><strong>Collection Method:</strong> Uses device microphone to monitor environmental sounds in real-time</li>
-                            <li><strong>Processing Method:</strong> All audio processing is completed locally on the device using iOS native SoundAnalysis framework for snoring detection</li>
-                            <li><strong>Storage Location:</strong> Recording files are only saved in the device's local sandbox (Documents directory) and never uploaded to any server</li>
-                            <li><strong>Retention Period:</strong> Default retention of the last 7 days of recordings, automatically deleted after expiration to save storage space</li>
-                            <li><strong>Data Format:</strong> Uses AAC compression encoding (.m4a format) to reduce file size</li>
-                        </ul>
-
-                        <h3>2.2 Metadata</h3>
-                        <ul>
-                            <li><strong>Recorded Information:</strong> Includes metadata such as recording time, duration, maximum decibel value, etc.</li>
-                            <li><strong>Storage Location:</strong> Metadata is saved in the sessions.json file on the device locally</li>
-                            <li><strong>Purpose:</strong> Used to display history records and statistics within the app</li>
-                        </ul>
-
-                        <h3>2.3 Required Permissions</h3>
-                        <ul>
-                            <li><strong>Microphone Permission:</strong> Required for listening to and recording snoring sounds</li>
-                            <li><strong>Background Running Permission:</strong> Allows the app to continue monitoring in background and when screen is locked</li>
-                        </ul>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>3. How We Use Data</h2>
-                        <ul>
-                            <li><strong>Local Processing:</strong> All audio analysis, snoring detection, and classification are completed locally on the device</li>
-                            <li><strong>No Cloud Upload:</strong> We do not upload any audio data or personal information to servers</li>
-                            <li><strong>Local Display:</strong> Recording data is only used to display history records and playback functionality within the app</li>
-                            <li><strong>No Third-Party Analysis:</strong> We do not share your audio data with any third parties for analysis or other purposes</li>
-                        </ul>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>4. Advertising Services</h2>
-                        <p>
-                            SnoreCatcher uses Google AdMob to display ads to support app development and maintenance.
-                        </p>
-                        
-                        <h3>4.1 AdMob Data Collection</h3>
-                        <ul>
-                            <li>AdMob may collect the following anonymous data for ad personalization:
-                                <ul>
-                                    <li>Device identifiers (such as advertising ID)</li>
-                                    <li>Device type, operating system version</li>
-                                    <li>Approximate location information (based on IP address)</li>
-                                    <li>App usage statistics</li>
-                                </ul>
-                            </li>
-                            <li>This data is collected directly by Google and is subject to Google's Privacy Policy</li>
-                            <li>We do not collect or access this ad-related data</li>
-                        </ul>
-
-                        <h3>4.2 Ad Types</h3>
-                        <ul>
-                            <li><strong>Banner Ads:</strong> Permanently displayed at the bottom of the app's main page</li>
-                            <li><strong>Interstitial Ads:</strong> Displayed during specific actions (such as ending monitoring, viewing details)</li>
-                            <li><strong>Rewarded Video Ads:</strong> Watch videos to receive 24-hour ad-free experience</li>
-                        </ul>
-
-                        <h3>4.3 Privacy Settings</h3>
-                        <p>
-                            You can limit ad tracking in your device settings (Settings → Privacy → Apple Advertising),
-                            or reset the advertising identifier in iOS settings. This may affect ad personalization but will not affect the app's core functionality.
-                        </p>
-
-                        <p>
-                            For more information about how AdMob collects and uses data, please refer to:
-                            <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> and
-                            <a href="https://support.google.com/admob/answer/6128543" target="_blank">AdMob Privacy FAQ</a>
-                        </p>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>5. Data Security</h2>
-                        <ul>
-                            <li><strong>Local Storage:</strong> All data is stored in the iOS app sandbox, inaccessible by other apps</li>
-                            <li><strong>System Protection:</strong> Benefits from iOS system security mechanisms, including encrypted file system and app isolation</li>
-                            <li><strong>No Network Transmission:</strong> Since data is not uploaded, there is no risk of leakage during network transmission</li>
-                            <li><strong>Automatic Cleanup:</strong> Recordings beyond the retention period are automatically deleted, reducing data accumulation</li>
-                        </ul>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>6. Data Sharing and Disclosure</h2>
-                        <p>
-                            <strong>We do not share your audio data.</strong> Your snoring recordings and personal information will not be shared with any third parties, including:
-                        </p>
-                        <ul>
-                            <li>Other apps or services</li>
-                            <li>Data analytics companies</li>
-                            <li>Cloud storage services</li>
-                            <li>Marketing companies</li>
-                        </ul>
-                        <p>
-                            The only exception is Google AdMob (as described in Section 4), which only collects anonymous ad-related data and does not involve your audio content.
-                        </p>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>7. Your Rights</h2>
-                        <ul>
-                            <li><strong>Access Data:</strong> You can view all saved recording records within the app at any time</li>
-                            <li><strong>Delete Data:</strong> You can manually delete recording records within the app, or uninstall the app to delete all data</li>
-                            <li><strong>Control Permissions:</strong> You can revoke microphone permissions at any time in iOS settings</li>
-                            <li><strong>Stop Using:</strong> You can stop using the app at any time, and no data will be collected after stopping</li>
-                        </ul>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>8. Children's Privacy</h2>
-                        <p>
-                            SnoreCatcher is not directed at children under the age of 13. We do not knowingly collect personal information from children.
-                            If you are a parent or guardian and believe your child has provided us with personal information, please contact us.
-                        </p>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>9. Policy Changes</h2>
-                        <p>
-                            We may update this Privacy Policy from time to time. For significant changes, we will post a notice in the app or on the website.
-                            We recommend that you review this page periodically to stay informed about the latest policy. Continued use of the app constitutes acceptance of the updated policy.
-                        </p>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>10. Contact Us</h2>
-                        <p>
-                            If you have any questions, comments, or concerns about this Privacy Policy, please contact us through:
-                        </p>
-                        <ul>
-                            <li>Developer contact channels through the app store</li>
-                            <li>Email to the developer (if email address is provided)</li>
-                        </ul>
-                    </section>
-
-                    <section class="policy-section">
-                        <h2>11. Third-Party Links</h2>
-                        <p>
-                            This Privacy Policy applies only to the SnoreCatcher app. If our website or app contains links to third-party websites,
-                            we are not responsible for the privacy practices of those websites. We recommend that you review the privacy policies of those third-party websites.
-                        </p>
-                    </section>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>SnoreCatcher</h3>
-                    <p>Privacy-first night snoring monitor</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Links</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="index.html#features">Features</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Developer</h4>
-                    <p>For questions or suggestions, please contact the developer</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 SnoreCatcher. All rights reserved.</p>
-            </div>
+        <div class="highlight-box">
+          <strong>Fundamental Principle: Data Never Leaves Your Device.</strong>
+          All night audio processing, decibel calculation, and recording clips are executed entirely on your iPhone and saved solely inside your local application sandbox. We do not maintain any cloud database or user registration system.
         </div>
-    </footer>
+
+        <section class="legal-section">
+          <h2>1. Overview</h2>
+          <p>
+            SnoreCatcher ("we", "our", or "the App") respects your privacy. This Privacy Policy details how data is managed when you use our iOS application. By using SnoreCatcher, you agree to the terms set forth herein.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>2. Data Handled by SnoreCatcher</h2>
+          <h3>2.1 Audio Data & Local Processing</h3>
+          <ul>
+            <li><strong>Microphone Stream:</strong> Used in real time to calculate sound decibel (dB) levels and analyze snore characteristics via Apple's native SoundAnalysis framework.</li>
+            <li><strong>Storage:</strong> Audio clips captured upon verified snore triggers are encoded in AAC (.m4a) and stored strictly in your local device Documents directory.</li>
+            <li><strong>No Cloud Sync:</strong> Audio files are never transmitted to any external server or third-party storage.</li>
+            <li><strong>Retention Policy:</strong> Recordings are retained locally for 7 days by default and can be permanently deleted or exported by the user at any time.</li>
+          </ul>
+
+          <h3>2.2 Metadata & App Preferences</h3>
+          <ul>
+            <li><strong>Session Logs:</strong> Includes timestamps, duration, and maximum decibel metrics stored locally in <code>sessions.json</code>.</li>
+            <li><strong>User Settings:</strong> Sensitivity preferences and retention options are stored via iOS <code>UserDefaults</code> on-device.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>3. iOS Permissions</h2>
+          <ul>
+            <li><strong>Microphone Permission (<code>NSMicrophoneUsageDescription</code>):</strong> Essential to monitor nighttime sound levels and detect snoring episodes.</li>
+            <li><strong>App Tracking Transparency (<code>NSUserTrackingUsageDescription</code>):</strong> Optional consent for Google AdMob personalized advertising under Apple's ATT framework. Users may refuse without impacting core snoring detection functionality.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>4. Third-Party Services & Advertising</h2>
+          <p>
+            SnoreCatcher utilizes <strong>Google AdMob</strong> to display advertising, which sustains the ongoing maintenance of the application.
+          </p>
+          <ul>
+            <li>AdMob may collect anonymized device identifiers, crash logs, and diagnostics in accordance with <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--accent-cyan);">Google's Privacy Policy</a>.</li>
+            <li>We publish authorized seller records via <a href="app-ads.txt" style="color: var(--accent-cyan);">app-ads.txt</a> to prevent fraudulent advertising.</li>
+            <li>No audio data or personal health markers are ever shared with advertisers or third parties.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>5. User Rights & Data Deletion</h2>
+          <p>
+            Because all recordings reside locally, you retain complete sovereignty over your data. You may delete individual sound clips within the app, clear all historical sessions, or remove all data instantly by uninstalling the application.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>6. Contact Us</h2>
+          <p>
+            If you have questions, feedback, or concerns regarding this Privacy Policy, please contact the developer directly at:
+          </p>
+          <p>
+            <strong>Official Support Email:</strong> <a href="mailto:fangdev1063@gmail.com" style="color: var(--accent-cyan);">fangdev1063@gmail.com</a>
+          </p>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        &copy; 2026 SnoreCatcher · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a> · <a href="app-ads.txt">app-ads.txt</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
