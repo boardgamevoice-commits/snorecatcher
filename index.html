@@ -3,94 +3,172 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SnoreCatcher - Privacy-First Night Snoring Monitor for iOS</title>
-  <meta name="description" content="SnoreCatcher is an intelligent, privacy-first night snoring monitor for iOS. Powered by SoundAnalysis ML and low-power audio DSP. 100% on-device processing.">
-  <meta property="og:title" content="SnoreCatcher - Night Snoring Monitor">
-  <meta property="og:description" content="Intelligent, privacy-first night snoring monitor for iOS. 100% on-device local storage.">
-  <meta property="og:image" content="assets/app_icon.png">
-  <meta name="twitter:card" content="summary">
+  <title>SnoreCatcher — Privacy-First Snore, Sleep Talk &amp; Apple Watch Vitals Monitor for iOS</title>
+  <meta name="description" content="100% offline locked-screen snore, sleep talk, cough &amp; breathing pause recorder for iPhone, iPad &amp; Apple Watch. Correlate nocturnal SpO2 &amp; heart rate, export 1-page Doctor PDF reports in 9 languages, and own PRO forever with zero subscriptions.">
+  <meta property="og:title" content="SnoreCatcher (Snore Detector) — 100% Offline Sleep &amp; Snore Monitor">
+  <meta property="og:description" content="Locked-screen overnight acoustic AI, Apple Watch SpO2 &amp; heart rate alignment, wrist haptic nudge, and 1-page clinical PDF reports in 9 languages. No subscriptions.">
+  <meta property="og:image" content="https://snorecatcher.netlify.app/assets/app_icon.png">
+  <meta property="og:url" content="https://snorecatcher.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SnoreCatcher — Privacy-First Night Snoring &amp; Vitals Monitor">
+  <meta name="twitter:description" content="100% on-device SoundAnalysis ML, Apple Watch SpO2 &amp; HR correlation, and 1-page Doctor PDF reports. Zero cloud uploads.">
+  <meta name="twitter:image" content="https://snorecatcher.netlify.app/assets/app_icon.png">
   <link rel="icon" type="image/png" href="assets/app_icon.png">
+  <link rel="apple-touch-icon" href="assets/app_icon.png">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <!-- Navigation Header -->
+  <!-- Sticky Glassmorphic Header -->
   <header>
     <div class="container nav-container">
-      <div class="brand-badge">
+      <a href="index.html" class="brand-badge">
         <img src="assets/app_icon.png" alt="SnoreCatcher App Icon">
         <span class="brand-name">SnoreCatcher</span>
-        <span class="version-pill">v1.0.4 · iOS 17+</span>
-      </div>
+        <span class="version-pill">v1.0.7 · iOS 17+</span>
+      </a>
       <div class="nav-right">
         <ul class="nav-links">
-          <li><a href="#features" data-i18n="navFeatures">Features</a></li>
           <li><a href="#simulator" data-i18n="navDemo">Live Lab</a></li>
+          <li><a href="#showcase" data-i18n="navShowcase">App Screens</a></li>
+          <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+          <li><a href="#pricing" data-i18n="navPricing">Pricing</a></li>
           <li><a href="privacy.html" data-i18n="navPrivacy">Privacy</a></li>
           <li><a href="terms.html" data-i18n="navTerms">Terms</a></li>
         </ul>
-        <button id="langToggle" class="lang-btn">中文</button>
-        <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="cta-nav" data-i18n="ctaGetApp">Get App</a>
+        <button id="langToggle" class="lang-btn" aria-label="Switch Language">中文</button>
+        <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="cta-nav" data-i18n="ctaGetApp">Download App</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Split Hero Section -->
     <section class="hero">
-      <div class="container">
-        <div class="hero-pill">
-          <span class="pulse-dot"></span>
-          <span data-i18n="heroBadge">100% On-Device Sound ML · Zero Cloud Upload</span>
-        </div>
-        <h1 class="hero-title" data-i18n="heroTitle">Privacy-First Night Snoring Monitor</h1>
-        <p class="hero-subtitle" data-i18n="heroSubtitle">
-          Automatically capture and review nighttime snoring audio clips with Apple SoundAnalysis machine learning. Ultra low power consumption, intelligent decibel triggers, and 100% local sandbox privacy.
-        </p>
-        <div class="hero-actions">
-          <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="btn-appstore">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-              <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.93.04-2.02.63-2.67 1.38-.56.65-1.07 1.71-.93 2.74 1.05.08 2.08-.54 2.68-1.25z"/>
-            </svg>
-            <span data-i18n="heroDownload">Download on App Store</span>
-          </a>
-          <a href="#simulator" class="btn-secondary" data-i18n="heroExploreDemo">
-            <span>Explore Sound Lab</span> &darr;
-          </a>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-pill">
+            <span class="pulse-dot"></span>
+            <span data-i18n="heroBadge">100% On-Device AI · Locked-Screen Capture · Zero Cloud Uploads</span>
+          </div>
+          <h1 class="hero-title" data-i18n="heroTitle">Hear Every Snore, Sleep Talk &amp; Vitals Shift — Privately.</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            Lock your iPhone at bedtime and let on-device Apple SoundAnalysis capture snoring, sleep talking, coughing, and suspected breathing pauses — aligned with Apple Watch heart rate &amp; SpO2 and ready as a 1-page Doctor PDF report in 9 languages.
+          </p>
+          <div class="hero-actions">
+            <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="btn-appstore">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.61-.75 1.04-1.8 0.92-2.87-.93.04-2.02.63-2.67 1.38-.56.65-1.07 1.71-.93 2.74 1.05.08 2.08-.54 2.68-1.25z"/>
+              </svg>
+              <span data-i18n="heroDownload">Download on the App Store</span>
+            </a>
+            <a href="#simulator" class="btn-secondary">
+              <span data-i18n="heroExploreDemo">Try Multi-Modal Sound Lab</span> &darr;
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-val">100%</span>
+              <span class="metric-lbl" data-i18n="metric1Lbl">Offline Sandbox</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-val">9</span>
+              <span class="metric-lbl" data-i18n="metric2Lbl">Native Languages</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-val">HR + SpO2</span>
+              <span class="metric-lbl" data-i18n="metric3Lbl">Apple Watch Sync</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-val">$2.99</span>
+              <span class="metric-lbl" data-i18n="metric4Lbl">Lifetime · No Subs</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Interactive Audio & Decibel Simulator -->
-        <div class="interactive-simulator" id="simulator">
+        <div class="hero-visual">
+          <div class="hero-glow-orb"></div>
+          <div class="phone-stage">
+            <div class="floating-chip chip-pdf">
+              <span class="chip-dot gold"></span>
+              <span data-i18n="chipPdf">1-Page Clinical PDF · 9 Languages</span>
+            </div>
+            <div class="phone-mockup phone-primary">
+              <img id="heroPhone1" src="assets/screen_monitor.png" alt="SnoreCatcher Active Overnight Monitoring Screen">
+            </div>
+            <div class="phone-mockup phone-secondary">
+              <img id="heroPhone2" src="assets/screen_vitals.png" alt="SnoreCatcher Snore Score and Apple Watch Vitals Screen">
+            </div>
+            <div class="floating-chip chip-watch">
+              <span class="chip-dot"></span>
+              <span data-i18n="chipWatch">Apple Watch SpO2 &amp; Wrist Nudge</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Multi-Modal Acoustic & Vitals Lab -->
+    <section id="simulator" class="lab-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-i18n="labTag">INTERACTIVE SLEEP ACOUSTIC LAB</span>
+          <h2 class="section-title" data-i18n="labTitle">Multi-Sound AI &amp; Vitals Correlation Simulator</h2>
+          <p class="section-desc" data-i18n="labDesc">
+            Test how SnoreCatcher combines dynamic ambient noise calibration, Apple SoundAnalysis classification, and Apple Watch SpO2 / heart rate alignment in real time.
+          </p>
+        </div>
+
+        <div class="interactive-simulator">
           <div class="sim-header">
             <div class="sim-status">
-              <span class="status-badge" id="simStatusText" data-i18n="simListening">● PASSIVE MONITORING</span>
-              <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-secondary);" id="dBDisplay">34 dB (Ambient)</span>
+              <span class="status-badge" id="simStatusText">● STANDBY LISTENING</span>
+              <span style="font-family: var(--font-mono); font-size: 0.85rem; color: var(--text-primary); font-weight: 600;" id="dBDisplay">33 dB · Quiet Room</span>
             </div>
-            <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
-              Apple SoundAnalysis DSP Emulation
+            <div class="vitals-readout">
+              <span>❤️ HR: <strong id="hrDisplay">58 BPM</strong></span>
+              <span>🩸 SpO2: <strong id="spo2Display">97%</strong></span>
+              <span id="nudgeDisplay" style="color: var(--accent-sky);">⌚ Nudge: Idle</span>
             </div>
           </div>
 
           <div class="waveform-canvas-wrapper">
-            <canvas id="waveformCanvas" width="800" height="140"></canvas>
+            <div class="canvas-legend">
+              <div class="legend-items">
+                <span><i class="legend-dot" style="background: #38bdf8;"></i><span data-i18n="legSnore">Snore</span></span>
+                <span><i class="legend-dot" style="background: #14b8a6;"></i><span data-i18n="legTalk">Sleep Talk</span></span>
+                <span><i class="legend-dot" style="background: #f59e0b;"></i><span data-i18n="legCough">Cough</span></span>
+                <span><i class="legend-dot" style="background: #f43f5e;"></i><span data-i18n="legApnea">Apnea Gasp + HR Curve</span></span>
+              </div>
+              <span data-i18n="legPreRoll">3.0s RingBuffer Pre-Roll Active</span>
+            </div>
+            <canvas id="waveformCanvas" width="920" height="165"></canvas>
           </div>
 
           <div class="sim-controls">
             <div class="control-card">
               <div class="control-label">
                 <span data-i18n="labelThreshold">Trigger Sensitivity Threshold</span>
-                <span id="thresholdVal" style="color: var(--accent-cyan); font-family: var(--font-mono); font-weight: 600;">55 dB</span>
+                <span id="thresholdVal" style="color: var(--accent-sky); font-family: var(--font-mono); font-weight: 700;">52 dB</span>
               </div>
-              <input type="range" class="threshold-slider" id="thresholdSlider" min="40" max="85" value="55">
+              <input type="range" class="threshold-slider" id="thresholdSlider" min="40" max="80" value="52">
+              <div class="noise-filter-row">
+                <span data-i18n="labelNoiseFilter">110Hz AC / Fan Adaptive Noise Filter</span>
+                <button type="button" id="noiseFilterBtn" class="toggle-pill">ON · -6 dB HUM</button>
+              </div>
             </div>
 
             <div class="control-card">
               <div class="control-label">
-                <span data-i18n="labelSimulator">Interactive Simulation Trigger</span>
-                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-emerald);">Web Audio Ready</span>
+                <span data-i18n="labelSimulator">Simulate Nocturnal Acoustic Events</span>
+                <span style="font-family: var(--font-mono); font-size: 0.73rem; color: var(--accent-emerald);" data-i18n="webAudioReady">Web Audio Synth</span>
               </div>
               <div class="trigger-actions">
-                <button class="sim-btn" id="btnSnore" data-i18n="btnTriggerSnore">💨 Simulate Snore Spike</button>
-                <button class="sim-btn" id="btnAmbient" data-i18n="btnTriggerAmbient">🌙 Ambient Quiet</button>
+                <button type="button" class="sim-btn" id="btnSnore" data-i18n="btnTriggerSnore">💨 Snoring Episode</button>
+                <button type="button" class="sim-btn" id="btnTalk" data-i18n="btnTriggerTalk">💬 Sleep Talking</button>
+                <button type="button" class="sim-btn" id="btnCough" data-i18n="btnTriggerCough">😷 Nocturnal Cough</button>
+                <button type="button" class="sim-btn apnea" id="btnApnea" data-i18n="btnTriggerApnea">🚨 Pause + Gasp (SpO2 Dip)</button>
               </div>
             </div>
           </div>
@@ -98,57 +176,261 @@
       </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features-section">
+    <!-- Native iOS Showcase -->
+    <section id="showcase">
       <div class="container">
         <div class="section-heading">
-          <span class="section-tag" data-i18n="featuresTag">ENGINEERED FOR REST</span>
-          <h2 class="section-title" data-i18n="featuresTitle">Smart Monitoring Without Compromise</h2>
-          <p class="section-desc" data-i18n="featuresDesc">Focused specifically on recording authentic snoring episodes, avoiding sleep bloat, and protecting user privacy.</p>
+          <span class="section-tag" data-i18n="showcaseTag">CRAFTED FOR DARK BEDROOMS</span>
+          <h2 class="section-title" data-i18n="showcaseTitle">Native iOS 17+ Dark Interface</h2>
+          <p class="section-desc" data-i18n="showcaseDesc">
+            Zero blinding white flashes at midnight. Adaptive layouts engineered for iPhone, iPad, and foldable displays across 9 native languages.
+          </p>
+        </div>
+
+        <div class="showcase-grid">
+          <div class="showcase-card">
+            <div class="showcase-frame">
+              <img id="shotMonitor" src="assets/screen_monitor.png" alt="Real-time Decibel Gauge and OLED Bedside Clock Entry">
+            </div>
+            <h3 data-i18n="shot1Title">Locked-Screen &amp; OLED Standby</h3>
+            <p data-i18n="shot1Desc">10Hz decibel meter, dynamic threshold control, and one-tap #000000 True-Black OLED Bedside Clock.</p>
+          </div>
+
+          <div class="showcase-card">
+            <div class="showcase-frame">
+              <img id="shotVitals" src="assets/screen_vitals.png" alt="Snore Score and Apple Health Vitals Correlation">
+            </div>
+            <h3 data-i18n="shot2Title">Snore Score &amp; Watch Vitals</h3>
+            <p data-i18n="shot2Desc">0–100 clinical weighted Snore Score paired with Apple Watch heart rate spikes and SpO2 desaturation checks.</p>
+          </div>
+
+          <div class="showcase-card">
+            <div class="showcase-frame">
+              <img id="shotPdf" src="assets/screen_pdf.png" alt="1-Page Clinical Doctor Consultation PDF Report">
+            </div>
+            <h3 data-i18n="shot3Title">1-Page Doctor PDF Report</h3>
+            <p data-i18n="shot3Desc">Generate structured offline A4 sleep summaries with 7-night baselines in 9 languages for ENT visits.</p>
+          </div>
+
+          <div class="showcase-card">
+            <div class="showcase-frame">
+              <img id="shotHistory" src="assets/screen_history.png" alt="7-Night Sleep History and Multi-Sound Event Breakdown">
+            </div>
+            <h3 data-i18n="shot4Title">Multi-Night Trend &amp; Playback</h3>
+            <p data-i18n="shot4Desc">Compare nightly scores, scrub interactive waveforms, skip silence, and boost quiet clips up to 8x (+18 dB).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9-Card Feature Architecture -->
+    <section id="features">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-i18n="featuresTag">CLINICAL-GRADE ACOUSTIC ENGINEERING</span>
+          <h2 class="section-title" data-i18n="featuresTitle">Everything You Need to Understand Your Sleep</h2>
+          <p class="section-desc" data-i18n="featuresDesc">
+            Built with Swift 6 concurrency, Accelerate vDSP, Apple SoundAnalysis, and HealthKit — delivering medical-grade clarity while keeping every recording strictly on your iPhone.
+          </p>
         </div>
 
         <div class="features-grid">
           <div class="feature-card">
-            <div class="feature-icon-wrapper">🔒</div>
-            <h3 data-i18n="feat1Title">100% Local Privacy</h3>
-            <p data-i18n="feat1Desc">Audio waveforms and AAC recordings are stored strictly inside your iOS app sandbox. No accounts, no cloud sync, and zero voice surveillance.</p>
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">🔐</div>
+              <span class="feature-badge" data-i18n="badgeFree">CORE FREE</span>
+            </div>
+            <h3 data-i18n="feat1Title">Locked-Screen Overnight Engine</h3>
+            <p data-i18n="feat1Desc">Plug into power, tap Start, and lock your iPhone. Dual-mode background capture with 3-second pre-roll buffering and automatic alarm/call interruption recovery never misses an episode.</p>
           </div>
+
           <div class="feature-card">
-            <div class="feature-icon-wrapper">🧠</div>
-            <h3 data-i18n="feat2Title">SoundAnalysis ML</h3>
-            <p data-i18n="feat2Desc">Combines decibel amplitude triggers with iOS native SoundAnalysis audio classification to distinguish real snoring from room noises.</p>
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">🧠</div>
+              <span class="feature-badge" data-i18n="badgeFree">CORE FREE</span>
+            </div>
+            <h3 data-i18n="feat2Title">4-Class On-Device Sound AI</h3>
+            <p data-i18n="feat2Desc">Apple SoundAnalysis distinguishes Snoring, Sleep Talking, Coughing, and Suspected Breathing Pauses (10–60s silence followed by a compensatory gasp) while rejecting AC and fan hum.</p>
           </div>
+
           <div class="feature-card">
-            <div class="feature-icon-wrapper">🔋</div>
-            <h3 data-i18n="feat3Title">Low-Power Overnight DSP</h3>
-            <p data-i18n="feat3Desc">High-efficiency circular buffer audio engine uses minimal CPU and battery during sleep. Safe for all-night nightstand monitoring.</p>
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">❤️</div>
+              <span class="feature-badge" data-i18n="badgeFree">APPLE HEALTH</span>
+            </div>
+            <h3 data-i18n="feat3Title">Apple Watch Vitals Alignment</h3>
+            <p data-i18n="feat3Desc">Bi-directional HealthKit sync logs in-bed sleep and coughs while overlaying nocturnal Heart Rate, Blood Oxygen (SpO2), and Deep/Core/REM sleep stages directly onto your audio timeline.</p>
           </div>
+
           <div class="feature-card">
-            <div class="feature-icon-wrapper">📱</div>
-            <h3 data-i18n="feat4Title">Background Lock Screen</h3>
-            <p data-i18n="feat4Desc">Runs silently even when the iPhone screen is locked. Pre-buffers 3 seconds before each trigger so you never miss the onset of an episode.</p>
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">⌚</div>
+              <span class="feature-badge pro">💎 PRO / 24H PASS</span>
+            </div>
+            <h3 data-i18n="feat4Title">Gentle Watch &amp; Bedside Haptic Nudge</h3>
+            <p data-i18n="feat4Desc">Mirrors gentle wrist vibrations to Apple Watch while locked and triggers bedside iPhone Taptic nudges to encourage side-sleeping — using single-alert replacement so notifications never stack.</p>
           </div>
+
           <div class="feature-card">
-            <div class="feature-icon-wrapper">📊</div>
-            <h3 data-i18n="feat5Title">Timeline & Waveforms</h3>
-            <p data-i18n="feat5Desc">Visual audio spectrogram playback, organized by calendar date. Easily listen to your snoring clips or export them for medical reference.</p>
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">📄</div>
+              <span class="feature-badge pro">💎 PRO / 24H PASS</span>
+            </div>
+            <h3 data-i18n="feat5Title">1-Page Doctor Consultation PDF</h3>
+            <p data-i18n="feat5Desc">Export a clean, 100% offline PDFKit summary featuring 7-session historical baselines, loudness tier breakdowns, and vitals-correlated apnea events for ENT or sleep clinic consultations.</p>
           </div>
+
           <div class="feature-card">
-            <div class="feature-icon-wrapper">🎯</div>
-            <h3 data-i18n="feat6Title">Zero Gimmicks & Bloat</h3>
-            <p data-i18n="feat6Desc">No intrusive social feeds, endless upsells, or fake sleep scores. A clean, reliable utility built to do one essential job exceptionally well.</p>
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">🎚️</div>
+              <span class="feature-badge" data-i18n="badgeFree">CORE FREE</span>
+            </div>
+            <h3 data-i18n="feat6Title">110Hz Denoise &amp; 8x Playback Boost</h3>
+            <p data-i18n="feat6Desc">Scrub interactive waveforms with smart silence skipping, strip low-frequency room hum via a 110Hz high-pass filter, and amplify quiet recordings by 2x, 4x, or 8x (+18 dB) without clipping.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">🧪</div>
+              <span class="feature-badge" data-i18n="badgeFree">CORE FREE</span>
+            </div>
+            <h3 data-i18n="feat7Title">Remedy Tracking &amp; Window Trim</h3>
+            <p data-i18n="feat7Desc">Log nasal strips, side-sleeping pillows, congestion, or alcohol to measure what truly lowers your Snore Score, and trim awake bedtime reading windows with a tap.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">🌙</div>
+              <span class="feature-badge" data-i18n="badgeFree">CORE FREE</span>
+            </div>
+            <h3 data-i18n="feat8Title">True-Black OLED Bedside Clock</h3>
+            <p data-i18n="feat8Desc">Pure #000000 pixel-off standby clock with dimmable warm amber/red night digits protects melatonin, prevents thermal buildup, and eliminates OLED burn-in.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-top">
+              <div class="feature-icon-wrapper">🌍</div>
+              <span class="feature-badge" data-i18n="badgeFree">9 LANGUAGES</span>
+            </div>
+            <h3 data-i18n="feat9Title">Instant 9-Language Switcher</h3>
+            <p data-i18n="feat9Desc">Switch live in Settings without restarting across English, Simplified &amp; Traditional Chinese, Japanese, Korean, German, Spanish, French, and Portuguese — syncing UI and PDF reports alike.</p>
           </div>
         </div>
 
-        <!-- Privacy Banner -->
-        <div class="privacy-banner">
-          <div class="privacy-info">
-            <h3 data-i18n="privBannerTitle">Built on Strict Device Sandbox Integrity</h3>
-            <p data-i18n="privBannerDesc">
-              SnoreCatcher requests microphone access purely to perform real-time local decibel metering and snore identification. Audio never leaves your physical phone. Full compliance with Apple ATT, GDPR, and Google AdMob.
-            </p>
+        <div class="languages-strip">
+          <div>
+            <strong style="color: #fff; font-family: var(--font-display);" data-i18n="langStripTitle">Full Native UI &amp; Clinical PDF Localization:</strong>
           </div>
-          <a href="privacy.html" class="btn-secondary" data-i18n="privBannerBtn">Read Full Privacy Policy &rarr;</a>
+          <div class="lang-tags">
+            <span class="lang-chip">🇺🇸/🇬🇧 English</span>
+            <span class="lang-chip">🇨🇳 简体中文</span>
+            <span class="lang-chip">🇹🇼/🇭🇰 繁體中文</span>
+            <span class="lang-chip">🇯🇵 日本語</span>
+            <span class="lang-chip">🇰🇷 한국어</span>
+            <span class="lang-chip">🇩🇪 Deutsch</span>
+            <span class="lang-chip">🇪🇸 Español</span>
+            <span class="lang-chip">🇫🇷 Français</span>
+            <span class="lang-chip">🇧🇷/🇵🇹 Português</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transparent Anti-Subscription Pricing -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag" data-i18n="pricingTag">NO SUBSCRIPTION TRAPS</span>
+          <h2 class="section-title" data-i18n="pricingTitle">Fair, Transparent Access — Never Rent Your Sleep</h2>
+          <p class="section-desc" data-i18n="pricingDesc">
+            Most sleep apps lock basic audio playback behind $59/year auto-renewing paywalls. SnoreCatcher keeps core tracking free forever and lets you own Lifetime PRO for the price of a coffee.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1: Free -->
+          <div class="pricing-card">
+            <div>
+              <div class="tier-name" data-i18n="tier1Name">Core Sleep Monitor</div>
+              <div class="tier-price-row">
+                <span class="tier-price">$0</span>
+              </div>
+              <span class="tier-period" data-i18n="tier1Period">Free Forever · No Account Needed</span>
+              <ul class="tier-list">
+                <li><span class="tier-check">✓</span><span data-i18n="t1Item1">Locked-screen overnight AI detection (Snore, Talk, Cough, Apnea)</span></li>
+                <li><span class="tier-check">✓</span><span data-i18n="t1Item2">7-day local clip history, waveform playback &amp; m4a audio export</span></li>
+                <li><span class="tier-check">✓</span><span data-i18n="t1Item3">Apple Health &amp; Apple Watch HR / SpO2 vitals timeline sync</span></li>
+                <li><span class="tier-check">✓</span><span data-i18n="t1Item4">110Hz noise reduction, 8x volume boost &amp; OLED Bedside Clock</span></li>
+              </ul>
+            </div>
+            <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="btn-tier" data-i18n="tier1Btn">Download Free</a>
+          </div>
+
+          <!-- Tier 2: 24h Rewarded Pass -->
+          <div class="pricing-card">
+            <div>
+              <div class="tier-name" data-i18n="tier2Name">24-Hour Rewarded Pass</div>
+              <div class="tier-price-row">
+                <span class="tier-price">$0</span>
+              </div>
+              <span class="tier-period" data-i18n="tier2Period">Watch 1 Short Video Before Bed</span>
+              <ul class="tier-list">
+                <li><span class="tier-check">✓</span><span data-i18n="t2Item1">Unlocks 100% of PRO features free for a full 24 hours</span></li>
+                <li><span class="tier-check">✓</span><span data-i18n="t2Item2">Apple Watch &amp; bedside gentle snore haptic nudge</span></li>
+                <li><span class="tier-check">✓</span><span data-i18n="t2Item3">Unlimited 1-page Clinical Doctor PDF Report exports</span></li>
+                <li><span class="tier-check">✓</span><span data-i18n="t2Item4">Zero banner or interstitial ads for 24 hours</span></li>
+              </ul>
+            </div>
+            <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="btn-tier" data-i18n="tier2Btn">Try in App for Free</a>
+          </div>
+
+          <!-- Tier 3: Lifetime PRO -->
+          <div class="pricing-card featured">
+            <span class="popular-ribbon" data-i18n="tier3Ribbon">70% OFF · ONE-TIME</span>
+            <div>
+              <div class="tier-name" data-i18n="tier3Name">SnoreCatcher Lifetime PRO</div>
+              <div class="tier-price-row">
+                <span class="tier-price">$2.99</span>
+                <span class="tier-strike">$9.99</span>
+              </div>
+              <span class="tier-period" data-i18n="tier3Period">Pay Once, Own Forever · Zero Subscriptions</span>
+              <ul class="tier-list">
+                <li><span class="tier-check">★</span><span data-i18n="t3Item1">Permanent Apple Watch &amp; bedside haptic snore intervention</span></li>
+                <li><span class="tier-check">★</span><span data-i18n="t3Item2">Unlimited 9-language Doctor Consultation PDF Reports</span></li>
+                <li><span class="tier-check">★</span><span data-i18n="t3Item3">100% ad-free forever (ad SDK completely bypassed at launch)</span></li>
+                <li><span class="tier-check">★</span><span data-i18n="t3Item4">Includes Apple Family Sharing for up to 5 family members</span></li>
+              </ul>
+            </div>
+            <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="btn-tier" data-i18n="tier3Btn">Get SnoreCatcher on App Store</a>
+          </div>
+        </div>
+
+        <!-- Privacy & Medical Compliance Banners -->
+        <div class="compliance-grid" style="margin-top: 48px;">
+          <div class="privacy-banner">
+            <div>
+              <h3 data-i18n="privBannerTitle">Strict On-Device Sandbox &amp; HealthKit Isolation</h3>
+              <p data-i18n="privBannerDesc">
+                All audio recordings (.m4a, excluded from iCloud backup) and Apple Health physiological metrics (heart rate, SpO2, sleep stages) are processed 100% locally inside your iPhone sandbox under App Store Guideline 5.1.1(v). Zero cloud servers, zero user accounts, and zero health data shared with advertisers.
+              </p>
+            </div>
+            <div>
+              <a href="privacy.html" class="btn-secondary" data-i18n="privBannerBtn">Read Full Privacy Policy &rarr;</a>
+            </div>
+          </div>
+
+          <div class="medical-banner">
+            <div>
+              <h3 data-i18n="medBannerTitle">Wellness &amp; Non-Diagnostic Notice</h3>
+              <p data-i18n="medBannerDesc">
+                SnoreCatcher is a personal wellness and acoustic self-tracking utility, not a medical diagnostic device (Guideline 1.4.1). Snore Scores, breathing pause indicators, and PDF reports do not replace polysomnography or clinical diagnosis.
+              </p>
+            </div>
+            <div style="font-size: 0.84rem; color: var(--text-muted);">
+              <span data-i18n="medRefPrefix">Clinical Reference:</span>
+              <a href="https://www.nhlbi.nih.gov/health/sleep-apnea" target="_blank" rel="noopener" class="inline-link">NIH NHLBI — Sleep Apnea Guide &nearr;</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -159,119 +441,290 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h4>SnoreCatcher</h4>
-          <p data-i18n="footerTagline">Intelligent, privacy-first nighttime snoring capture & sleep audio monitoring utility for iOS.</p>
+          <h4>
+            <img src="assets/app_icon.png" alt="SnoreCatcher Icon">
+            <span>SnoreCatcher</span>
+          </h4>
+          <p data-i18n="footerTagline">
+            Privacy-first nighttime snoring, sleep talk, cough &amp; Apple Watch vitals monitor for iPhone and iPad.
+          </p>
         </div>
+
         <div class="footer-links-col">
-          <h5 data-i18n="footerLegal">Legal & Compliance</h5>
+          <h5 data-i18n="footerProduct">Product</h5>
+          <ul>
+            <li><a href="#simulator" data-i18n="navDemo">Live Sound Lab</a></li>
+            <li><a href="#showcase" data-i18n="navShowcase">App Screens</a></li>
+            <li><a href="#features" data-i18n="navFeatures">Features</a></li>
+            <li><a href="#pricing" data-i18n="navPricing">Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h5 data-i18n="footerLegal">Legal &amp; Compliance</h5>
           <ul>
             <li><a href="privacy.html" data-i18n="navPrivacy">Privacy Policy</a></li>
             <li><a href="terms.html" data-i18n="navTerms">Terms of Use</a></li>
             <li><a href="app-ads.txt">app-ads.txt</a></li>
           </ul>
         </div>
+
         <div class="footer-links-col">
-          <h5 data-i18n="footerSupport">Support & Feedback</h5>
+          <h5 data-i18n="footerSupport">Support &amp; Store</h5>
           <ul>
             <li><a href="mailto:fangdev1063@gmail.com">fangdev1063@gmail.com</a></li>
             <li><a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener">App Store (ID: 6757622696)</a></li>
+            <li style="color: var(--text-muted); font-family: var(--font-mono); font-size: 0.78rem;">v1.0.7 (Build 8) · iOS 17.0+</li>
           </ul>
         </div>
       </div>
+
       <div class="footer-bottom">
-        &copy; 2026 SnoreCatcher · All rights reserved. Designed for iOS 17+.
+        <span>&copy; 2026 SnoreCatcher (Snore Detector). All rights reserved.</span>
+        <span data-i18n="footerPrivacyNote">100% On-Device Processing · Zero Cloud Audio Uploads</span>
       </div>
     </div>
   </footer>
 
-  <!-- Bilingual & Interactive Script -->
+  <!-- Bilingual Switcher & Multi-Modal Acoustic/Vitals Simulator -->
   <script>
     const i18n = {
       en: {
-        navFeatures: "Features",
         navDemo: "Live Lab",
+        navShowcase: "App Screens",
+        navFeatures: "Features",
+        navPricing: "Pricing",
         navPrivacy: "Privacy",
         navTerms: "Terms",
-        ctaGetApp: "Get App",
-        heroBadge: "100% On-Device Sound ML · Zero Cloud Upload",
-        heroTitle: "Privacy-First Night Snoring Monitor",
-        heroSubtitle: "Automatically capture and review nighttime snoring audio clips with Apple SoundAnalysis machine learning. Ultra low power consumption, intelligent decibel triggers, and 100% local sandbox privacy.",
-        heroDownload: "Download on App Store",
-        heroExploreDemo: "Explore Sound Lab",
-        simListening: "● PASSIVE MONITORING",
-        simSnoreDetected: "⚠️ SNORE EPISODE CAPTURED",
+        ctaGetApp: "Download App",
+        heroBadge: "100% On-Device AI · Locked-Screen Capture · Zero Cloud Uploads",
+        heroTitle: "Hear Every Snore, Sleep Talk & Vitals Shift — Privately.",
+        heroSubtitle: "Lock your iPhone at bedtime and let on-device Apple SoundAnalysis capture snoring, sleep talking, coughing, and suspected breathing pauses — aligned with Apple Watch heart rate & SpO2 and ready as a 1-page Doctor PDF report in 9 languages.",
+        heroDownload: "Download on the App Store",
+        heroExploreDemo: "Try Multi-Modal Sound Lab",
+        metric1Lbl: "Offline Sandbox",
+        metric2Lbl: "Native Languages",
+        metric3Lbl: "Apple Watch Sync",
+        metric4Lbl: "Lifetime · No Subs",
+        chipPdf: "1-Page Clinical PDF · 9 Languages",
+        chipWatch: "Apple Watch SpO2 & Wrist Nudge",
+        labTag: "INTERACTIVE SLEEP ACOUSTIC LAB",
+        labTitle: "Multi-Sound AI & Vitals Correlation Simulator",
+        labDesc: "Test how SnoreCatcher combines dynamic ambient noise calibration, Apple SoundAnalysis classification, and Apple Watch SpO2 / heart rate alignment in real time.",
+        legSnore: "Snore",
+        legTalk: "Sleep Talk",
+        legCough: "Cough",
+        legApnea: "Apnea Gasp + HR Curve",
+        legPreRoll: "3.0s RingBuffer Pre-Roll Active",
         labelThreshold: "Trigger Sensitivity Threshold",
-        labelSimulator: "Interactive Simulation Trigger",
-        btnTriggerSnore: "💨 Simulate Snore Spike",
-        btnTriggerAmbient: "🌙 Ambient Quiet",
-        featuresTag: "ENGINEERED FOR REST",
-        featuresTitle: "Smart Monitoring Without Compromise",
-        featuresDesc: "Focused specifically on recording authentic snoring episodes, avoiding sleep bloat, and protecting user privacy.",
-        feat1Title: "100% Local Privacy",
-        feat1Desc: "Audio waveforms and AAC recordings are stored strictly inside your iOS app sandbox. No accounts, no cloud sync, and zero voice surveillance.",
-        feat2Title: "SoundAnalysis ML",
-        feat2Desc: "Combines decibel amplitude triggers with iOS native SoundAnalysis audio classification to distinguish real snoring from room noises.",
-        feat3Title: "Low-Power Overnight DSP",
-        feat3Desc: "High-efficiency circular buffer audio engine uses minimal CPU and battery during sleep. Safe for all-night nightstand monitoring.",
-        feat4Title: "Background Lock Screen",
-        feat4Desc: "Runs silently even when the iPhone screen is locked. Pre-buffers 3 seconds before each trigger so you never miss the onset of an episode.",
-        feat5Title: "Timeline & Waveforms",
-        feat5Desc: "Visual audio spectrogram playback, organized by calendar date. Easily listen to your snoring clips or export them for medical reference.",
-        feat6Title: "Zero Gimmicks & Bloat",
-        feat6Desc: "No intrusive social feeds, endless upsells, or fake sleep scores. A clean, reliable utility built to do one essential job exceptionally well.",
-        privBannerTitle: "Built on Strict Device Sandbox Integrity",
-        privBannerDesc: "SnoreCatcher requests microphone access purely to perform real-time local decibel metering and snore identification. Audio never leaves your physical phone. Full compliance with Apple ATT, GDPR, and Google AdMob.",
+        labelNoiseFilter: "110Hz AC / Fan Adaptive Noise Filter",
+        labelSimulator: "Simulate Nocturnal Acoustic Events",
+        webAudioReady: "Web Audio Synth",
+        btnTriggerSnore: "💨 Snoring Episode",
+        btnTriggerTalk: "💬 Sleep Talking",
+        btnTriggerCough: "😷 Nocturnal Cough",
+        btnTriggerApnea: "🚨 Pause + Gasp (SpO2 Dip)",
+        showcaseTag: "CRAFTED FOR DARK BEDROOMS",
+        showcaseTitle: "Native iOS 17+ Dark Interface",
+        showcaseDesc: "Zero blinding white flashes at midnight. Adaptive layouts engineered for iPhone, iPad, and foldable displays across 9 native languages.",
+        shot1Title: "Locked-Screen & OLED Standby",
+        shot1Desc: "10Hz decibel meter, dynamic threshold control, and one-tap #000000 True-Black OLED Bedside Clock.",
+        shot2Title: "Snore Score & Watch Vitals",
+        shot2Desc: "0–100 clinical weighted Snore Score paired with Apple Watch heart rate spikes and SpO2 desaturation checks.",
+        shot3Title: "1-Page Doctor PDF Report",
+        shot3Desc: "Generate structured offline A4 sleep summaries with 7-night baselines in 9 languages for ENT visits.",
+        shot4Title: "Multi-Night Trend & Playback",
+        shot4Desc: "Compare nightly scores, scrub interactive waveforms, skip silence, and boost quiet clips up to 8x (+18 dB).",
+        featuresTag: "CLINICAL-GRADE ACOUSTIC ENGINEERING",
+        featuresTitle: "Everything You Need to Understand Your Sleep",
+        featuresDesc: "Built with Swift 6 concurrency, Accelerate vDSP, Apple SoundAnalysis, and HealthKit — delivering medical-grade clarity while keeping every recording strictly on your iPhone.",
+        badgeFree: "CORE FREE",
+        feat1Title: "Locked-Screen Overnight Engine",
+        feat1Desc: "Plug into power, tap Start, and lock your iPhone. Dual-mode background capture with 3-second pre-roll buffering and automatic alarm/call interruption recovery never misses an episode.",
+        feat2Title: "4-Class On-Device Sound AI",
+        feat2Desc: "Apple SoundAnalysis distinguishes Snoring, Sleep Talking, Coughing, and Suspected Breathing Pauses (10–60s silence followed by a compensatory gasp) while rejecting AC and fan hum.",
+        feat3Title: "Apple Watch Vitals Alignment",
+        feat3Desc: "Bi-directional HealthKit sync logs in-bed sleep and coughs while overlaying nocturnal Heart Rate, Blood Oxygen (SpO2), and Deep/Core/REM sleep stages directly onto your audio timeline.",
+        feat4Title: "Gentle Watch & Bedside Haptic Nudge",
+        feat4Desc: "Mirrors gentle wrist vibrations to Apple Watch while locked and triggers bedside iPhone Taptic nudges to encourage side-sleeping — using single-alert replacement so notifications never stack.",
+        feat5Title: "1-Page Doctor Consultation PDF",
+        feat5Desc: "Export a clean, 100% offline PDFKit summary featuring 7-session historical baselines, loudness tier breakdowns, and vitals-correlated apnea events for ENT or sleep clinic consultations.",
+        feat6Title: "110Hz Denoise & 8x Playback Boost",
+        feat6Desc: "Scrub interactive waveforms with smart silence skipping, strip low-frequency room hum via a 110Hz high-pass filter, and amplify quiet recordings by 2x, 4x, or 8x (+18 dB) without clipping.",
+        feat7Title: "Remedy Tracking & Window Trim",
+        feat7Desc: "Log nasal strips, side-sleeping pillows, congestion, or alcohol to measure what truly lowers your Snore Score, and trim awake bedtime reading windows with a tap.",
+        feat8Title: "True-Black OLED Bedside Clock",
+        feat8Desc: "Pure #000000 pixel-off standby clock with dimmable warm amber/red night digits protects melatonin, prevents thermal buildup, and eliminates OLED burn-in.",
+        feat9Title: "Instant 9-Language Switcher",
+        feat9Desc: "Switch live in Settings without restarting across English, Simplified & Traditional Chinese, Japanese, Korean, German, Spanish, French, and Portuguese — syncing UI and PDF reports alike.",
+        langStripTitle: "Full Native UI & Clinical PDF Localization:",
+        pricingTag: "NO SUBSCRIPTION TRAPS",
+        pricingTitle: "Fair, Transparent Access — Never Rent Your Sleep",
+        pricingDesc: "Most sleep apps lock basic audio playback behind $59/year auto-renewing paywalls. SnoreCatcher keeps core tracking free forever and lets you own Lifetime PRO for the price of a coffee.",
+        tier1Name: "Core Sleep Monitor",
+        tier1Period: "Free Forever · No Account Needed",
+        t1Item1: "Locked-screen overnight AI detection (Snore, Talk, Cough, Apnea)",
+        t1Item2: "7-day local clip history, waveform playback & m4a audio export",
+        t1Item3: "Apple Health & Apple Watch HR / SpO2 vitals timeline sync",
+        t1Item4: "110Hz noise reduction, 8x volume boost & OLED Bedside Clock",
+        tier1Btn: "Download Free",
+        tier2Name: "24-Hour Rewarded Pass",
+        tier2Period: "Watch 1 Short Video Before Bed",
+        t2Item1: "Unlocks 100% of PRO features free for a full 24 hours",
+        t2Item2: "Apple Watch & bedside gentle snore haptic nudge",
+        t2Item3: "Unlimited 1-page Clinical Doctor PDF Report exports",
+        t2Item4: "Zero banner or interstitial ads for 24 hours",
+        tier2Btn: "Try in App for Free",
+        tier3Ribbon: "70% OFF · ONE-TIME",
+        tier3Name: "SnoreCatcher Lifetime PRO",
+        tier3Period: "Pay Once, Own Forever · Zero Subscriptions",
+        t3Item1: "Permanent Apple Watch & bedside haptic snore intervention",
+        t3Item2: "Unlimited 9-language Doctor Consultation PDF Reports",
+        t3Item3: "100% ad-free forever (ad SDK completely bypassed at launch)",
+        t3Item4: "Includes Apple Family Sharing for up to 5 family members",
+        tier3Btn: "Get SnoreCatcher on App Store",
+        privBannerTitle: "Strict On-Device Sandbox & HealthKit Isolation",
+        privBannerDesc: "All audio recordings (.m4a, excluded from iCloud backup) and Apple Health physiological metrics (heart rate, SpO2, sleep stages) are processed 100% locally inside your iPhone sandbox under App Store Guideline 5.1.1(v). Zero cloud servers, zero user accounts, and zero health data shared with advertisers.",
         privBannerBtn: "Read Full Privacy Policy →",
-        footerTagline: "Intelligent, privacy-first nighttime snoring capture & sleep audio monitoring utility for iOS.",
+        medBannerTitle: "Wellness & Non-Diagnostic Notice",
+        medBannerDesc: "SnoreCatcher is a personal wellness and acoustic self-tracking utility, not a medical diagnostic device (Guideline 1.4.1). Snore Scores, breathing pause indicators, and PDF reports do not replace polysomnography or clinical diagnosis.",
+        medRefPrefix: "Clinical Reference:",
+        footerTagline: "Privacy-first nighttime snoring, sleep talk, cough & Apple Watch vitals monitor for iPhone and iPad.",
+        footerProduct: "Product",
         footerLegal: "Legal & Compliance",
-        footerSupport: "Support & Feedback"
+        footerSupport: "Support & Store",
+        footerPrivacyNote: "100% On-Device Processing · Zero Cloud Audio Uploads"
       },
       zh: {
-        navFeatures: "核心功能",
         navDemo: "声学实验室",
+        navShowcase: "应用界面",
+        navFeatures: "核心功能",
+        navPricing: "良心买断",
         navPrivacy: "隐私政策",
         navTerms: "服务条款",
-        ctaGetApp: "获取应用",
-        heroBadge: "100% 本地端侧声学算法 · 零云端上传",
-        heroTitle: "守护隐私的夜间鼾声监测专家",
-        heroSubtitle: "基于 Apple 原生 SoundAnalysis 机器学习算法，在手机端自动捕获并分析夜间打鼾音频片段。超低功耗 DSP 引擎、智能分贝阈值触发，全程本地沙盒守护。",
-        heroDownload: "前往 App Store 下载",
-        heroExploreDemo: "体验声学模拟器",
-        simListening: "● 静音守候监测中",
-        simSnoreDetected: "⚠️ 捕获到特征鼾声事件",
-        labelThreshold: "智能触发灵敏度阈值",
-        labelSimulator: "互动声学场景模拟",
-        btnTriggerSnore: "💨 模拟打鼾突发",
-        btnTriggerAmbient: "🌙 恢复夜间静音",
-        featuresTag: "专为安心睡眠设计",
-        featuresTitle: "专注纯粹，不向隐私妥协",
-        featuresDesc: "专精于真实鼾声片段的智能捕捉与清晰回放，杜绝多余营销冗余，彻底捍卫您的个人声学隐私。",
-        feat1Title: "100% 本地沙盒隐私",
-        feat1Desc: "录音片段与波形数据严格保存在 iOS 设备本地沙盒，无需注册账号，无需上传云端，彻底免除私密声音泄露担忧。",
-        feat2Title: "SoundAnalysis 智能甄别",
-        feat2Desc: "结合瞬时分贝跃变与苹果官方音频分类机器学习模型，精准过滤翻身床响与环境噪音，仅留存真实打鼾声。",
-        feat3Title: "整夜超低功耗引擎",
-        feat3Desc: "采用高效率环形缓冲音频管线，大幅降低夜间 CPU 占用与电量消耗，床头安心监测一整晚。",
-        feat4Title: "支持锁屏后台监听",
-        feat4Desc: "即使 iPhone 锁屏也能静默稳定工作，自带 3 秒事件前预缓存技术，完整捕捉打鼾全过程。",
-        feat5Title: "日历回放与波形时间线",
-        feat5Desc: "按睡眠日期直观整理录音时间戳，支持高精波形回放与剪辑导出，方便自我健康评估或就医时作为参考。",
-        feat6Title: "零套路 · 极简轻量",
-        feat6Desc: "没有眼花缭乱的虚假睡眠评分和繁琐社区，专精于将鼾声捕获这一件事做到极致稳定与可靠。",
-        privBannerTitle: "原生沙盒级隐私保护规范",
-        privBannerDesc: "SnoreCatcher 仅在本地获取麦克风音频流用于实时分贝测算与打鼾特征识别，录音绝不上传任何云端服务器。严格符合苹果 ATT 隐私框架、GDPR 及 Google AdMob 广告合规要求。",
+        ctaGetApp: "免费下载",
+        heroBadge: "100% 本地端侧 AI · 支持锁屏整夜监测 · 零云端上传",
+        heroTitle: "忠实捕捉每一次打鼾、梦话与血氧波动。",
+        heroSubtitle: "睡前锁屏即可安心入睡。基于 Apple 原生离线 SoundAnalysis 引擎，精准记录打鼾、说梦话、夜间咳嗽与疑似呼吸停顿，联动 Apple Watch 心率与血氧饱和度（SpO2），一键导出支持 9 国语言的一页式临床就诊 PDF 报告。",
+        heroDownload: "前往 App Store 免费下载",
+        heroExploreDemo: "体验多模态声学实验室",
+        metric1Lbl: "纯本地沙盒隐私",
+        metric2Lbl: "原生支持语言",
+        metric3Lbl: "Apple Watch 联动",
+        metric4Lbl: "一次买断 · 无订阅",
+        chipPdf: "一页式就诊 PDF 报告 · 9 国语言",
+        chipWatch: "Apple Watch 血氧关联 & 腕部微震",
+        labTag: "交互式睡眠声学与体征实验室",
+        labTitle: "多模态声学 AI 与手表生理指标模拟器",
+        labDesc: "在线体验 SnoreCatcher 如何实时融合环境底噪自适应滤波、Apple SoundAnalysis 四类夜音识别，以及 Apple Watch 心率与血氧异常印证。",
+        legSnore: "打鼾",
+        legTalk: "梦话",
+        legCough: "夜间咳嗽",
+        legApnea: "呼吸暂停喘息 + 心率曲线",
+        legPreRoll: "3.0 秒环形缓冲预录已就绪",
+        labelThreshold: "智能触发分贝阈值",
+        labelNoiseFilter: "110Hz 空调 / 风扇低频降噪滤波",
+        labelSimulator: "点击模拟夜间声学与体征事件",
+        webAudioReady: "Web Audio 实时合成",
+        btnTriggerSnore: "💨 模拟响亮打鼾",
+        btnTriggerTalk: "💬 模拟夜间梦话",
+        btnTriggerCough: "😷 模拟夜间咳嗽",
+        btnTriggerApnea: "🚨 呼吸停顿 + 血氧下降",
+        showcaseTag: "专为暗夜卧室倾心打磨",
+        showcaseTitle: "原生 iOS 17+ 深色防刺眼界面",
+        showcaseDesc: "第 0 帧深色背景防闪白，全面适配 iPhone、iPad 与折叠大屏，支持应用内免重启一键切换 9 国语言。",
+        shot1Title: "锁屏后台监测与 OLED 夜钟",
+        shot1Desc: "高精度实时分贝表盘、智能灵敏度调节，一键进入 #000000 纯黑微光 OLED 床头时钟。",
+        shot2Title: "鼾声指数与手表血氧心率关联",
+        shot2Desc: "0–100 综合打鼾评分（Snore Score），自动交叉验证 Apple Watch 心率飙升与血氧骤降事件。",
+        shot3Title: "一页式就诊 PDF 评估报告",
+        shot3Desc: "100% 离线生成标准 A4 临床摘要，包含近 7 晚基线对比与生理异常明细，支持 9 国语言。",
+        shot4Title: "多晚趋势对比与 8 倍增强回放",
+        shot4Desc: "按日历直观管理睡眠趋势，支持波形拖拽、段首静音跳过与最高 8 倍（+18dB）降噪放大。",
+        featuresTag: "专业级端侧声学与健康架构",
+        featuresTitle: "全方位还原整夜睡眠真相，绝不妥协隐私",
+        featuresDesc: "基于 Swift 6 并发模型、Accelerate vDSP 硬件加速、Apple SoundAnalysis 与 HealthKit 构建，所有音频与健康体征严格保留在您的 iPhone 本地沙盒。",
+        badgeFree: "核心免费",
+        feat1Title: "锁屏后台整夜稳定捕获",
+        feat1Desc: "睡前插电、点击开始并锁屏即可。独创后台响度门控录音与晨间离线 AI 分析双模架构，自带 3 秒预缓存与闹钟/来电中断自动恢复。",
+        feat2Title: "4 类夜间声音离线 AI 甄别",
+        feat2Desc: "精准区分轻中重度打鼾、梦话、夜间咳嗽与疑似呼吸暂停（10–60 秒呼吸静默后突发代偿性喘息），有效过滤翻身与空调底噪。",
+        feat3Title: "Apple Watch 心率与血氧双向联动",
+        feat3Desc: "深度打通 Apple 健康（HealthKit）：自动写入睡眠时长与咳嗽记录，并将夜间心率、血氧饱和度（SpO2）与深睡/核心/REM 阶段叠加至声学时间轴。",
+        feat4Title: "手表镜像与枕边温柔震动止鼾",
+        feat4Desc: "锁屏监测到持续打鼾时自动镜像至 Apple Watch 手腕轻柔微震，或触发枕边 iPhone 微震引导自然侧睡；采用单通知覆盖机制，整夜锁屏零消息堆叠。",
+        feat5Title: "一页式耳鼻喉就诊 PDF 报告",
+        feat5Desc: "原生 PDFKit 纯离线生成单页临床评估报告，涵盖近 7 晚历史基线、轻中重度鼾声占比及伴随血氧波动的重点事件表，方便门诊高效沟通。",
+        feat6Title: "110Hz 环境降噪与 8 倍音量放大",
+        feat6Desc: "内置可拖拽声波进度条与静音自动跳过，配合 110Hz 高通空调降噪滤波与 2x / 4x / 8x（+18dB）防破音增益放大，细微呼吸声清晰可辨。",
+        feat7Title: "止鼾措施追踪与睡眠时间窗裁剪",
+        feat7Desc: "记录鼻贴、侧睡枕、鼻塞或睡前饮酒等标签，量化对比不同止鼾方案效果；支持一键裁剪睡前阅读清醒时段并同步更新至 Apple 健康。",
+        feat8Title: "纯黑 #000000 OLED 床头夜钟",
+        feat8Desc: "彻底关闭非发光像素，提供多档暖琥珀/暗红微光时间显示，不抑制褪黑素分泌，有效防止夜间机身发热与 OLED 烧屏。",
+        feat9Title: "9 国语言应用内免重启即时切换",
+        feat9Desc: "在设置页一键切换简/繁体中文、英语、日语、韩语、德语、西班牙语、法语与葡萄牙语，全局界面与就诊 PDF 报告实时同步。",
+        langStripTitle: "客户端界面与一页式临床 PDF 报告全量本地化：",
+        pricingTag: "拒绝高价自动续费陷阱",
+        pricingTitle: "核心功能永久免费，一杯咖啡永久买断",
+        pricingDesc: "市面上多数睡眠应用动辄每年数百元订阅才允许听取自己的打鼾录音。SnoreCatcher 坚持基础监测永久免费，并提供零门槛激励通行证与超低价终身买断。",
+        tier1Name: "核心睡眠监测版",
+        tier1Period: "永久免费 · 无需注册登录",
+        t1Item1: "锁屏整夜离线 AI 识别（打鼾 / 梦话 / 咳嗽 / 疑似呼吸停顿）",
+        t1Item2: "7 天本地录音保留、声波同步回放与 .m4a 原始音频一键分享",
+        t1Item3: "Apple 健康双向同步与 Apple Watch 心率 / 血氧时间轴叠加",
+        t1Item4: "110Hz 环境降噪、最高 8 倍音量放大与纯黑 OLED 床头时钟",
+        tier1Btn: "免费下载使用",
+        tier2Name: "24 小时完整高级通行证",
+        tier2Period: "睡前观看 1 条简短激励视频即可解锁",
+        t2Item1: "免费完整解锁未来 24 小时全部 PRO 高级特权",
+        t2Item2: "开启 Apple Watch 手腕镜像微震与枕边震动止鼾提醒",
+        t2Item3: "无限次生成与导出 9 国语言一页式就诊 PDF 评估报告",
+        t2Item4: "24 小时内全局免除底部横幅与插屏广告干扰",
+        tier2Btn: "在应用内免费体验",
+        tier3Ribbon: "限时 3 折 · 一次买断",
+        tier3Name: "SnoreCatcher 终身版 PRO",
+        tier3Period: "一次付费永久拥有 · 绝无自动续费订阅",
+        t3Item1: "永久解锁 Apple Watch 与枕边双通道温柔震动止鼾干预",
+        t3Item2: "永久无限次导出 9 国语言一页式临床就诊 PDF 报告",
+        t3Item3: "永久 100% 纯净零广告（启动直接跳过广告 SDK 初始化）",
+        t3Item4: "支持苹果“家人共享”（Family Sharing），最多 5 位家人共享 PRO",
+        tier3Btn: "前往 App Store 获取",
+        privBannerTitle: "严苛本地沙盒保护与 HealthKit 绝对隔离",
+        privBannerDesc: "所有夜间录音切片（.m4a 自动排除在 iCloud 云备份之外）及 Apple 健康生理指标（心率、血氧、睡眠分期）均严格遵循 App Store 审核准则 5.1.1(v) 在设备本地处理，零云端服务器、零账号体系，绝不向任何广告或第三方共享健康数据。",
         privBannerBtn: "查阅完整隐私政策 →",
-        footerTagline: "专为 iOS 打造的高可靠、低功耗、全本地夜间鼾声监测工具。",
-        footerLegal: "合规与政策",
-        footerSupport: "技术支持与联络"
+        medBannerTitle: "日常健康辅助与非医疗器械声明",
+        medBannerDesc: "SnoreCatcher（鼾声捕手）属于个人睡眠健康记录与声学辅助工具，并非医疗诊断器械（遵循准则 1.4.1）。应用内的打鼾指数、疑似呼吸暂停提示及 PDF 报告仅供参考，不能替代医院多导睡眠监测（PSG）或专业医师诊断。",
+        medRefPrefix: "权威医学临床指南参考：",
+        footerTagline: "专为 iPhone 与 iPad 打造的隐私优先型夜间打鼾、梦话、咳嗽与 Apple Watch 体征监测工具。",
+        footerProduct: "产品导览",
+        footerLegal: "法律与合规",
+        footerSupport: "技术支持与商店",
+        footerPrivacyNote: "100% 端侧本地处理 · 零云端录音上传"
       }
     };
 
     let currentLang = 'en';
     const langBtn = document.getElementById('langToggle');
 
+    function syncScreenshots(lang) {
+      const suffix = lang === 'zh' ? '_zh' : '';
+      const map = {
+        heroPhone1: `assets/screen_monitor${suffix}.png`,
+        heroPhone2: `assets/screen_vitals${suffix}.png`,
+        shotMonitor: `assets/screen_monitor${suffix}.png`,
+        shotVitals: `assets/screen_vitals${suffix}.png`,
+        shotPdf: `assets/screen_pdf${suffix}.png`,
+        shotHistory: `assets/screen_history${suffix}.png`
+      };
+      Object.entries(map).forEach(([id, src]) => {
+        const img = document.getElementById(id);
+        if (img) img.src = src;
+      });
+    }
+
     function updateLanguage(lang) {
       currentLang = lang;
+      try { localStorage.setItem('sc_lang', lang); } catch (e) {}
       langBtn.textContent = lang === 'en' ? '中文' : 'English';
       document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -279,155 +732,348 @@
           el.textContent = i18n[lang][key];
         }
       });
+      syncScreenshots(lang);
       document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      updateNoiseFilterLabel();
     }
 
     langBtn.addEventListener('click', () => {
       updateLanguage(currentLang === 'en' ? 'zh' : 'en');
     });
 
-    // Waveform & Decibel Simulator Canvas
+    // Multi-Modal Acoustic & Vitals Canvas Simulator
     const canvas = document.getElementById('waveformCanvas');
     const ctx = canvas.getContext('2d');
     const dBDisplay = document.getElementById('dBDisplay');
+    const hrDisplay = document.getElementById('hrDisplay');
+    const spo2Display = document.getElementById('spo2Display');
+    const nudgeDisplay = document.getElementById('nudgeDisplay');
     const thresholdSlider = document.getElementById('thresholdSlider');
     const thresholdVal = document.getElementById('thresholdVal');
     const simStatusText = document.getElementById('simStatusText');
-    const btnSnore = document.getElementById('btnSnore');
-    const btnAmbient = document.getElementById('btnAmbient');
+    const noiseFilterBtn = document.getElementById('noiseFilterBtn');
 
-    let isSnoring = false;
+    const btnSnore = document.getElementById('btnSnore');
+    const btnTalk = document.getElementById('btnTalk');
+    const btnCough = document.getElementById('btnCough');
+    const btnApnea = document.getElementById('btnApnea');
+    const allSimBtns = [btnSnore, btnTalk, btnCough, btnApnea];
+
+    let activeMode = 'ambient'; // ambient | snore | talk | cough | apnea
+    let modeTimer = null;
+    let apneaPhase = 0; // 0: silence pause, 1: explosive gasp
+    let noiseFilterOn = true;
     let threshold = parseInt(thresholdSlider.value, 10);
-    let currentDB = 34;
-    let points = new Array(80).fill(0);
+    let currentDB = 32;
+    let currentHR = 58;
+    let currentSpO2 = 97;
+
+    const NUM_BARS = 88;
+    let bars = Array.from({ length: NUM_BARS }, () => ({ amp: 3, mode: 'ambient' }));
+    let hrCurve = new Array(NUM_BARS).fill(58);
     let audioCtx = null;
+
+    function updateNoiseFilterLabel() {
+      if (noiseFilterOn) {
+        noiseFilterBtn.classList.remove('off');
+        noiseFilterBtn.textContent = currentLang === 'zh' ? '已开启 · -6 dB 底噪抑制' : 'ON · -6 dB HUM';
+      } else {
+        noiseFilterBtn.classList.add('off');
+        noiseFilterBtn.textContent = currentLang === 'zh' ? '已关闭 · 原始底噪' : 'OFF · RAW MIC';
+      }
+    }
+
+    noiseFilterBtn.addEventListener('click', () => {
+      noiseFilterOn = !noiseFilterOn;
+      updateNoiseFilterLabel();
+    });
 
     thresholdSlider.addEventListener('input', (e) => {
       threshold = parseInt(e.target.value, 10);
       thresholdVal.textContent = `${threshold} dB`;
     });
 
-    function playSimulatedAudio(snore) {
+    function playSynthEvent(type) {
       try {
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
+        const now = audioCtx.currentTime;
         const osc = audioCtx.createOscillator();
         const gain = audioCtx.createGain();
         osc.connect(gain);
         gain.connect(audioCtx.destination);
 
-        if (snore) {
+        if (type === 'snore') {
           osc.type = 'sawtooth';
-          osc.frequency.setValueAtTime(95, audioCtx.currentTime);
-          osc.frequency.exponentialRampToValueAtTime(140, audioCtx.currentTime + 0.35);
-          osc.frequency.exponentialRampToValueAtTime(75, audioCtx.currentTime + 0.7);
-          gain.gain.setValueAtTime(0.01, audioCtx.currentTime);
-          gain.gain.linearRampToValueAtTime(0.12, audioCtx.currentTime + 0.2);
-          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.8);
-          osc.start();
-          osc.stop(audioCtx.currentTime + 0.85);
-        } else {
-          osc.type = 'sine';
-          osc.frequency.setValueAtTime(220, audioCtx.currentTime);
-          gain.gain.setValueAtTime(0.02, audioCtx.currentTime);
-          gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.15);
-          osc.start();
-          osc.stop(audioCtx.currentTime + 0.18);
+          osc.frequency.setValueAtTime(88, now);
+          osc.frequency.exponentialRampToValueAtTime(136, now + 0.35);
+          osc.frequency.exponentialRampToValueAtTime(72, now + 0.75);
+          gain.gain.setValueAtTime(0.008, now);
+          gain.gain.linearRampToValueAtTime(0.09, now + 0.22);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.85);
+          osc.start(now);
+          osc.stop(now + 0.88);
+        } else if (type === 'talk') {
+          osc.type = 'triangle';
+          osc.frequency.setValueAtTime(195, now);
+          osc.frequency.linearRampToValueAtTime(245, now + 0.18);
+          osc.frequency.linearRampToValueAtTime(175, now + 0.42);
+          gain.gain.setValueAtTime(0.01, now);
+          gain.gain.linearRampToValueAtTime(0.07, now + 0.12);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.5);
+          osc.start(now);
+          osc.stop(now + 0.52);
+        } else if (type === 'cough') {
+          osc.type = 'square';
+          osc.frequency.setValueAtTime(150, now);
+          osc.frequency.exponentialRampToValueAtTime(65, now + 0.22);
+          gain.gain.setValueAtTime(0.09, now);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 0.25);
+          osc.start(now);
+          osc.stop(now + 0.26);
+        } else if (type === 'apnea') {
+          osc.type = 'sawtooth';
+          osc.frequency.setValueAtTime(60, now + 0.9);
+          osc.frequency.exponentialRampToValueAtTime(210, now + 1.18);
+          gain.gain.setValueAtTime(0.0001, now);
+          gain.gain.setValueAtTime(0.11, now + 0.9);
+          gain.gain.exponentialRampToValueAtTime(0.001, now + 1.45);
+          osc.start(now);
+          osc.stop(now + 1.48);
         }
       } catch (err) {}
     }
 
-    btnSnore.addEventListener('click', () => {
-      isSnoring = true;
-      btnSnore.classList.add('active');
-      btnAmbient.classList.remove('active');
-      playSimulatedAudio(true);
-      setTimeout(() => {
-        isSnoring = false;
-        btnSnore.classList.remove('active');
-      }, 2500);
-    });
+    function triggerScenario(mode, btn) {
+      if (modeTimer) clearTimeout(modeTimer);
+      allSimBtns.forEach(b => b.classList.remove('active'));
+      activeMode = mode;
+      btn.classList.add('active');
+      playSynthEvent(mode);
 
-    btnAmbient.addEventListener('click', () => {
-      isSnoring = false;
-      btnSnore.classList.remove('active');
-      btnAmbient.classList.add('active');
-      playSimulatedAudio(false);
-      setTimeout(() => btnAmbient.classList.remove('active'), 1000);
-    });
+      if (mode === 'apnea') {
+        apneaPhase = 0; // 0.9s eerie silence pause, then explosive gasp + HR spike + SpO2 < 90%
+        setTimeout(() => {
+          if (activeMode === 'apnea') apneaPhase = 1;
+        }, 900);
+        modeTimer = setTimeout(() => {
+          activeMode = 'ambient';
+          btn.classList.remove('active');
+        }, 3400);
+      } else {
+        modeTimer = setTimeout(() => {
+          activeMode = 'ambient';
+          btn.classList.remove('active');
+        }, 2600);
+      }
+    }
 
+    btnSnore.addEventListener('click', () => triggerScenario('snore', btnSnore));
+    btnTalk.addEventListener('click', () => triggerScenario('talk', btnTalk));
+    btnCough.addEventListener('click', () => triggerScenario('cough', btnCough));
+    btnApnea.addEventListener('click', () => triggerScenario('apnea', btnApnea));
+
+    let frameTick = 0;
     function draw() {
+      frameTick++;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const w = canvas.width;
       const h = canvas.height;
-      const mid = h / 2;
+      const mid = h * 0.56;
 
-      // Calculate target dB & wave amplitude
-      let targetDB = isSnoring ? (68 + Math.random() * 12) : (32 + Math.random() * 4);
-      currentDB += (targetDB - currentDB) * 0.15;
-      dBDisplay.textContent = `${Math.round(currentDB)} dB ${isSnoring ? '(Snoring)' : '(Ambient)'}`;
+      const baseAmbient = noiseFilterOn ? 30 : 36;
+      let targetDB = baseAmbient + Math.random() * 3;
+      let targetHR = 58 + Math.sin(frameTick * 0.03) * 1.5;
+      let targetSpO2 = 97;
+      let barMode = 'ambient';
 
-      const triggered = currentDB >= threshold;
-      if (triggered) {
-        simStatusText.textContent = currentLang === 'zh' ? '⚠️ 捕获到特征鼾声事件' : '⚠️ SNORE EPISODE CAPTURED';
-        simStatusText.style.color = '#ef4444';
-        simStatusText.style.background = 'rgba(239, 68, 68, 0.18)';
-        simStatusText.style.borderColor = 'rgba(239, 68, 68, 0.4)';
-      } else {
-        simStatusText.textContent = currentLang === 'zh' ? '● 静音守候监测中' : '● PASSIVE MONITORING';
-        simStatusText.style.color = 'var(--accent-emerald)';
-        simStatusText.style.background = 'rgba(16, 185, 129, 0.15)';
-        simStatusText.style.borderColor = 'rgba(16, 185, 129, 0.3)';
+      if (activeMode === 'snore') {
+        targetDB = 66 + Math.sin(frameTick * 0.25) * 9 + Math.random() * 5;
+        targetHR = 64;
+        targetSpO2 = 95;
+        barMode = 'snore';
+      } else if (activeMode === 'talk') {
+        targetDB = 58 + Math.random() * 11;
+        targetHR = 66;
+        targetSpO2 = 97;
+        barMode = 'talk';
+      } else if (activeMode === 'cough') {
+        targetDB = (frameTick % 18 < 7) ? (74 + Math.random() * 8) : (42 + Math.random() * 5);
+        targetHR = 70;
+        targetSpO2 = 96;
+        barMode = 'cough';
+      } else if (activeMode === 'apnea') {
+        if (apneaPhase === 0) {
+          targetDB = 24 + Math.random() * 1.5; // Respiratory silence pause
+          targetHR = 54;
+          targetSpO2 = 91;
+          barMode = 'pause';
+        } else {
+          targetDB = 76 + Math.random() * 9; // Compensatory choking gasp
+          targetHR = 82; // +24 BPM autonomic spike
+          targetSpO2 = 88; // <90% desaturation dip
+          barMode = 'apnea';
+        }
       }
 
-      // Shift points
-      const newAmp = isSnoring ? (Math.random() * 45 + 15) : (Math.random() * 4 + 2);
-      points.push(newAmp);
-      points.shift();
+      currentDB += (targetDB - currentDB) * 0.18;
+      currentHR += (targetHR - currentHR) * 0.12;
+      currentSpO2 += (targetSpO2 - currentSpO2) * 0.12;
 
-      // Threshold Line
-      const threshY = mid - (threshold / 100) * (mid - 10);
+      const roundedDB = Math.round(currentDB);
+      const roundedHR = Math.round(currentHR);
+      const roundedSpO2 = Math.round(currentSpO2);
+
+      hrDisplay.textContent = `${roundedHR} BPM`;
+      spo2Display.textContent = `${roundedSpO2}%`;
+      spo2Display.style.color = roundedSpO2 <= 90 ? '#f43f5e' : '#ffffff';
+
+      const triggered = currentDB >= threshold || (activeMode === 'apnea' && apneaPhase === 0);
+
+      // Status & Watch Nudge UI
+      if (activeMode === 'apnea' && apneaPhase === 0) {
+        simStatusText.textContent = currentLang === 'zh' ? '⏸ 检测到异常呼吸静默期 (10–60s)...' : '⏸ RESPIRATORY SILENCE PAUSE...';
+        simStatusText.style.color = '#fbbf24';
+        simStatusText.style.background = 'rgba(245, 158, 11, 0.16)';
+        simStatusText.style.borderColor = 'rgba(245, 158, 11, 0.4)';
+        dBDisplay.textContent = `${roundedDB} dB · Silence Gap`;
+        nudgeDisplay.textContent = currentLang === 'zh' ? '⌚ 微震：监测停顿' : '⌚ Nudge: Armed';
+        nudgeDisplay.style.color = '#fbbf24';
+      } else if (activeMode === 'apnea' && apneaPhase === 1) {
+        simStatusText.textContent = currentLang === 'zh' ? '🚨 生理印证呼吸暂停 (SpO2 88% + 心率飙升)' : '🚨 VITALS-CORRELATED APNEA GASP';
+        simStatusText.style.color = '#fda4af';
+        simStatusText.style.background = 'rgba(244, 63, 94, 0.22)';
+        simStatusText.style.borderColor = 'rgba(244, 63, 94, 0.5)';
+        dBDisplay.textContent = `${roundedDB} dB · Apnea Choke`;
+        nudgeDisplay.textContent = currentLang === 'zh' ? '⌚ 手表微震已触发！' : '⌚ Wrist Nudge Sent!';
+        nudgeDisplay.style.color = '#f43f5e';
+      } else if (triggered && activeMode === 'snore') {
+        simStatusText.textContent = currentLang === 'zh' ? '💨 AI 确认：特征鼾声录音中' : '💨 SNORE EPISODE RECORDING';
+        simStatusText.style.color = '#38bdf8';
+        simStatusText.style.background = 'rgba(56, 189, 248, 0.16)';
+        simStatusText.style.borderColor = 'rgba(56, 189, 248, 0.45)';
+        dBDisplay.textContent = `${roundedDB} dB · Snoring`;
+        nudgeDisplay.textContent = currentLang === 'zh' ? '⌚ 手腕轻柔微震中' : '⌚ Wrist Haptic Pulse';
+        nudgeDisplay.style.color = '#38bdf8';
+      } else if (triggered && activeMode === 'talk') {
+        simStatusText.textContent = currentLang === 'zh' ? '💬 AI 确认：夜间梦话片段' : '💬 SLEEP TALKING CAPTURED';
+        simStatusText.style.color = '#2dd4bf';
+        simStatusText.style.background = 'rgba(20, 184, 166, 0.16)';
+        simStatusText.style.borderColor = 'rgba(20, 184, 166, 0.45)';
+        dBDisplay.textContent = `${roundedDB} dB · Sleep Talk`;
+        nudgeDisplay.textContent = currentLang === 'zh' ? '⌚ 微震：仅鼾声触发' : '⌚ Nudge: Standby';
+        nudgeDisplay.style.color = 'var(--text-muted)';
+      } else if (triggered && activeMode === 'cough') {
+        simStatusText.textContent = currentLang === 'zh' ? '😷 AI 确认：夜间咳嗽 (同步健康)' : '😷 COUGH LOGGED TO HEALTHKIT';
+        simStatusText.style.color = '#fbbf24';
+        simStatusText.style.background = 'rgba(245, 158, 11, 0.16)';
+        simStatusText.style.borderColor = 'rgba(245, 158, 11, 0.45)';
+        dBDisplay.textContent = `${roundedDB} dB · Cough`;
+        nudgeDisplay.textContent = currentLang === 'zh' ? '⌚ 微震：待命' : '⌚ Nudge: Standby';
+        nudgeDisplay.style.color = 'var(--text-muted)';
+      } else {
+        simStatusText.textContent = currentLang === 'zh' ? '● 锁屏低功耗守候中' : '● STANDBY LISTENING';
+        simStatusText.style.color = '#34d399';
+        simStatusText.style.background = 'rgba(16, 185, 129, 0.15)';
+        simStatusText.style.borderColor = 'rgba(16, 185, 129, 0.35)';
+        dBDisplay.textContent = `${roundedDB} dB · ${currentLang === 'zh' ? '环境安静' : 'Quiet Room'}`;
+        nudgeDisplay.textContent = currentLang === 'zh' ? '⌚ 微震：待命' : '⌚ Nudge: Idle';
+        nudgeDisplay.style.color = 'var(--accent-sky)';
+      }
+
+      if (frameTick % 2 === 0) {
+        const normAmp = Math.max(2, (currentDB - 22) * 0.95);
+        bars.push({ amp: normAmp, mode: triggered ? barMode : 'ambient' });
+        bars.shift();
+        hrCurve.push(currentHR);
+        hrCurve.shift();
+      }
+
+      // Draw Threshold Line
+      const threshAmp = Math.max(4, (threshold - 22) * 0.95);
+      const threshY = mid - threshAmp;
       ctx.beginPath();
-      ctx.strokeStyle = 'rgba(239, 68, 68, 0.4)';
+      ctx.strokeStyle = 'rgba(56, 189, 248, 0.32)';
       ctx.lineWidth = 1;
-      ctx.setLineDash([4, 4]);
+      ctx.setLineDash([5, 5]);
       ctx.moveTo(0, threshY);
       ctx.lineTo(w, threshY);
       ctx.stroke();
       ctx.setLineDash([]);
 
-      // Center Line
+      // Baseline
       ctx.beginPath();
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.07)';
       ctx.lineWidth = 1;
       ctx.moveTo(0, mid);
       ctx.lineTo(w, mid);
       ctx.stroke();
 
-      // Waveform bars
-      const barW = w / points.length;
-      for (let i = 0; i < points.length; i++) {
+      // Acoustic Spectrogram Bars
+      const barW = w / NUM_BARS;
+      for (let i = 0; i < NUM_BARS; i++) {
         const x = i * barW;
-        const amp = points[i];
-        const barH = amp * 1.5;
+        const item = bars[i];
+        const barH = Math.min(mid - 8, item.amp);
 
-        const grad = ctx.createLinearGradient(0, mid - barH, 0, mid + barH);
-        if (triggered) {
-          grad.addColorStop(0, 'rgba(244, 63, 94, 0.8)');
-          grad.addColorStop(0.5, 'rgba(6, 182, 212, 0.9)');
-          grad.addColorStop(1, 'rgba(244, 63, 94, 0.8)');
-        } else {
-          grad.addColorStop(0, 'rgba(6, 182, 212, 0.4)');
-          grad.addColorStop(0.5, 'rgba(16, 185, 129, 0.7)');
-          grad.addColorStop(1, 'rgba(6, 182, 212, 0.4)');
+        let colorTop = 'rgba(56, 189, 248, 0.32)';
+        let colorMid = 'rgba(16, 185, 129, 0.55)';
+        if (item.mode === 'snore') {
+          colorTop = 'rgba(56, 189, 248, 0.95)';
+          colorMid = 'rgba(99, 102, 241, 0.9)';
+        } else if (item.mode === 'talk') {
+          colorTop = 'rgba(45, 212, 191, 0.95)';
+          colorMid = 'rgba(16, 185, 129, 0.85)';
+        } else if (item.mode === 'cough') {
+          colorTop = 'rgba(251, 191, 36, 0.95)';
+          colorMid = 'rgba(245, 158, 11, 0.85)';
+        } else if (item.mode === 'apnea') {
+          colorTop = 'rgba(244, 63, 94, 0.98)';
+          colorMid = 'rgba(251, 113, 133, 0.9)';
+        } else if (item.mode === 'pause') {
+          colorTop = 'rgba(251, 191, 36, 0.35)';
+          colorMid = 'rgba(251, 191, 36, 0.25)';
         }
 
+        const grad = ctx.createLinearGradient(0, mid - barH, 0, mid + barH * 0.65);
+        grad.addColorStop(0, colorTop);
+        grad.addColorStop(0.55, colorMid);
+        grad.addColorStop(1, colorTop);
+
         ctx.fillStyle = grad;
-        ctx.fillRect(x, mid - barH, barW - 2, barH * 2);
+        ctx.fillRect(x + 1, mid - barH, Math.max(2, barW - 3), barH + barH * 0.62);
       }
+
+      // Overlaid Apple Watch Heart Rate Curve
+      ctx.beginPath();
+      ctx.lineWidth = 2.2;
+      ctx.strokeStyle = 'rgba(244, 63, 94, 0.88)';
+      for (let i = 0; i < NUM_BARS; i++) {
+        const x = i * barW + barW * 0.5;
+        const hrNorm = (hrCurve[i] - 48) / 42; // 48..90 BPM
+        const y = (h - 14) - hrNorm * (h - 34);
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+      ctx.stroke();
 
       requestAnimationFrame(draw);
     }
+
+    // Initialize saved or browser language
+    try {
+      const saved = localStorage.getItem('sc_lang');
+      if (saved === 'zh' || saved === 'en') {
+        updateLanguage(saved);
+      } else if (navigator.language && navigator.language.toLowerCase().startsWith('zh')) {
+        updateLanguage('zh');
+      } else {
+        updateNoiseFilterLabel();
+      }
+    } catch (e) {
+      updateNoiseFilterLabel();
+    }
+
     requestAnimationFrame(draw);
   </script>
 </body>

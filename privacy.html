@@ -3,162 +3,179 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy - SnoreCatcher</title>
-  <meta name="description" content="Privacy Policy for SnoreCatcher iOS Application. 100% on-device processing, sandbox local storage, and AdMob compliance.">
+  <title>Privacy Policy — SnoreCatcher</title>
+  <meta name="description" content="Privacy Policy for SnoreCatcher (Snore Detector) iOS &amp; iPadOS app. 100% on-device audio processing, strict Apple HealthKit sandbox isolation (Guideline 5.1.1(v)), and GDPR/ATT compliance.">
   <link rel="icon" type="image/png" href="assets/app_icon.png">
+  <link rel="apple-touch-icon" href="assets/app_icon.png">
   <link rel="stylesheet" href="index.css">
-  <style>
-    .legal-page {
-      padding: 60px 0 100px;
-    }
-    .legal-card {
-      background: var(--bg-surface);
-      border: 1px solid var(--border-subtle);
-      border-radius: var(--radius-lg);
-      padding: clamp(24px, 5vw, 48px);
-      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4);
-    }
-    .legal-card h1 {
-      font-size: 2.4rem;
-      margin-bottom: 8px;
-      color: #fff;
-    }
-    .legal-date {
-      font-family: var(--font-mono);
-      font-size: 0.85rem;
-      color: var(--accent-cyan);
-      margin-bottom: 36px;
-      display: block;
-    }
-    .legal-section {
-      margin-bottom: 36px;
-    }
-    .legal-section h2 {
-      font-size: 1.4rem;
-      color: #fff;
-      margin-bottom: 14px;
-      border-bottom: 1px solid var(--border-subtle);
-      padding-bottom: 8px;
-    }
-    .legal-section h3 {
-      font-size: 1.1rem;
-      color: var(--accent-cyan);
-      margin: 18px 0 8px;
-    }
-    .legal-section p {
-      color: var(--text-secondary);
-      margin-bottom: 14px;
-      line-height: 1.7;
-    }
-    .legal-section ul {
-      color: var(--text-secondary);
-      margin-left: 24px;
-      margin-bottom: 14px;
-      line-height: 1.7;
-    }
-    .legal-section li {
-      margin-bottom: 8px;
-    }
-    .highlight-box {
-      background: rgba(16, 185, 129, 0.08);
-      border: 1px solid rgba(16, 185, 129, 0.25);
-      border-radius: var(--radius-md);
-      padding: 20px;
-      margin: 20px 0;
-      color: #fff;
-    }
-  </style>
 </head>
 <body>
   <header>
     <div class="container nav-container">
-      <div class="brand-badge">
-        <a href="index.html" style="display: flex; align-items: center; gap: 12px;">
-          <img src="assets/app_icon.png" alt="SnoreCatcher Icon">
-          <span class="brand-name">SnoreCatcher</span>
-        </a>
-      </div>
+      <a href="index.html" class="brand-badge">
+        <img src="assets/app_icon.png" alt="SnoreCatcher Icon">
+        <span class="brand-name">SnoreCatcher</span>
+        <span class="version-pill">v1.0.7 · iOS 17+</span>
+      </a>
       <div class="nav-right">
         <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="privacy.html" style="color: var(--accent-cyan);">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Use</a></li>
+          <li><a href="index.html" data-i18n="navHome">Home</a></li>
+          <li><a href="index.html#features" data-i18n="navFeatures">Features</a></li>
+          <li><a href="privacy.html" class="active" data-i18n="navPrivacy">Privacy Policy</a></li>
+          <li><a href="terms.html" data-i18n="navTerms">Terms of Use</a></li>
         </ul>
-        <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="cta-nav">App Store</a>
+        <button id="langToggle" class="lang-btn" aria-label="Switch Language">中文</button>
+        <a href="https://apps.apple.com/app/id6757622696" target="_blank" rel="noopener" class="cta-nav" data-i18n="ctaStore">App Store</a>
       </div>
     </div>
   </header>
 
   <main class="legal-page">
     <div class="container">
-      <div class="legal-card">
+      <!-- English Legal Content -->
+      <div class="legal-card" id="contentEn">
         <h1>Privacy Policy</h1>
-        <span class="legal-date">Last Updated: January 19, 2026</span>
+        <span class="legal-date">Effective &amp; Last Updated: November 15, 2026 · App Version 1.0.7</span>
 
         <div class="highlight-box">
-          <strong>Fundamental Principle: Data Never Leaves Your Device.</strong>
-          All night audio processing, decibel calculation, and recording clips are executed entirely on your iPhone and saved solely inside your local application sandbox. We do not maintain any cloud database or user registration system.
+          <strong>Core Privacy Architecture: Your Sleep Audio &amp; Health Data Never Leave Your Device.</strong><br>
+          All nocturnal audio classification, AAC audio recordings, Apple Health (HealthKit) physiological vitals, and clinical PDF reports are processed and stored <strong>100% locally inside your iPhone or iPad application sandbox</strong>. We operate zero cloud backend servers and require no user accounts.
         </div>
 
         <section class="legal-section">
           <h2>1. Overview</h2>
           <p>
-            SnoreCatcher ("we", "our", or "the App") respects your privacy. This Privacy Policy details how data is managed when you use our iOS application. By using SnoreCatcher, you agree to the terms set forth herein.
+            SnoreCatcher (also distributed on the App Store as "Snore Detector: Sleep Recorder", Bundle ID <code>fangdev.SnoreCatcher</code>) is developed with a strict privacy-by-design architecture. This Privacy Policy explains what permissions the App requests, how data is processed locally on your device, and how third-party advertising consent is handled.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>2. Data Handled by SnoreCatcher</h2>
-          <h3>2.1 Audio Data & Local Processing</h3>
+          <h2>2. Microphone Audio &amp; Local Storage</h2>
           <ul>
-            <li><strong>Microphone Stream:</strong> Used in real time to calculate sound decibel (dB) levels and analyze snore characteristics via Apple's native SoundAnalysis framework.</li>
-            <li><strong>Storage:</strong> Audio clips captured upon verified snore triggers are encoded in AAC (.m4a) and stored strictly in your local device Documents directory.</li>
-            <li><strong>No Cloud Sync:</strong> Audio files are never transmitted to any external server or third-party storage.</li>
-            <li><strong>Retention Policy:</strong> Recordings are retained locally for 7 days by default and can be permanently deleted or exported by the user at any time.</li>
-          </ul>
-
-          <h3>2.2 Metadata & App Preferences</h3>
-          <ul>
-            <li><strong>Session Logs:</strong> Includes timestamps, duration, and maximum decibel metrics stored locally in <code>sessions.json</code>.</li>
-            <li><strong>User Settings:</strong> Sensitivity preferences and retention options are stored via iOS <code>UserDefaults</code> on-device.</li>
+            <li><strong>On-Device Sound Analysis (<code>NSMicrophoneUsageDescription</code>):</strong> Microphone input is analyzed locally in real time (and via deferred on-device analysis for locked-screen candidate clips) using Apple's native <code>SoundAnalysis</code> framework and Accelerate DSP to identify snoring, sleep talking, coughing, and suspected breathing pauses.</li>
+            <li><strong>Sandbox Persistence &amp; iCloud Backup Exclusion:</strong> Verified nocturnal sound clips are saved in compressed AAC (<code>.m4a</code>) format inside your app's private <code>Documents/</code> container and explicitly flagged with <code>isExcludedFromBackup = true</code> so private bedroom recordings are never uploaded to iCloud backups.</li>
+            <li><strong>Automatic 7-Day Rolling Retention:</strong> By default, historical audio sessions older than 7 days are automatically purged on-device to conserve storage. You may delete any individual clip or session immediately inside the App.</li>
+            <li><strong>User-Initiated Exports:</strong> Audio clips and 1-page Doctor Consultation PDF Reports (generated 100% offline via Apple <code>PDFKit</code>) leave your device only when you explicitly share or print them using the system iOS Share Sheet.</li>
           </ul>
         </section>
 
         <section class="legal-section">
-          <h2>3. iOS Permissions</h2>
-          <ul>
-            <li><strong>Microphone Permission (<code>NSMicrophoneUsageDescription</code>):</strong> Essential to monitor nighttime sound levels and detect snoring episodes.</li>
-            <li><strong>App Tracking Transparency (<code>NSUserTrackingUsageDescription</code>):</strong> Optional consent for Google AdMob personalized advertising under Apple's ATT framework. Users may refuse without impacting core snoring detection functionality.</li>
-          </ul>
-        </section>
-
-        <section class="legal-section">
-          <h2>4. Third-Party Services & Advertising</h2>
+          <h2>3. Apple Health (HealthKit) Data &amp; Strict Isolation</h2>
           <p>
-            SnoreCatcher utilizes <strong>Google AdMob</strong> to display advertising, which sustains the ongoing maintenance of the application.
+            When you explicitly grant permission via Apple's system HealthKit authorization sheet, SnoreCatcher integrates with Apple Health strictly for personal sleep insights:
           </p>
           <ul>
-            <li>AdMob may collect anonymized device identifiers, crash logs, and diagnostics in accordance with <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" style="color: var(--accent-cyan);">Google's Privacy Policy</a>.</li>
-            <li>We publish authorized seller records via <a href="app-ads.txt" style="color: var(--accent-cyan);">app-ads.txt</a> to prevent fraudulent advertising.</li>
-            <li>No audio data or personal health markers are ever shared with advertisers or third parties.</li>
+            <li><strong>Health Data Read (<code>NSHealthShareUsageDescription</code>):</strong> Nocturnal Heart Rate, Oxygen Saturation (SpO2), Sleep Analysis Stages (Deep, Core, REM, Awake), and Respiratory Rate — used exclusively on-device to display nightly physiological summaries and cross-reference acoustic breathing pauses on your timeline.</li>
+            <li><strong>Health Data Written (<code>NSHealthUpdateUsageDescription</code>):</strong> Monitored in-bed sleep intervals and detected coughing episodes (<code>HKCategoryTypeIdentifierCoughing</code>), written only when auto-sync is enabled and session duration exceeds 60 seconds.</li>
+            <li><strong>App Store Guideline 5.1.1(v) Strict Isolation Guarantee:</strong> HealthKit data is <strong>never transmitted off your device</strong>, is <strong>never stored on external servers</strong>, and is <strong>strictly isolated from Google AdMob, analytics, advertising, data brokers, or any third-party SDK</strong>.</li>
           </ul>
         </section>
 
         <section class="legal-section">
-          <h2>5. User Rights & Data Deletion</h2>
+          <h2>4. Local Notifications &amp; Apple Watch Haptic Mirroring</h2>
           <p>
-            Because all recordings reside locally, you retain complete sovereignty over your data. You may delete individual sound clips within the app, clear all historical sessions, or remove all data instantly by uninstalling the application.
+            If you enable the optional Apple Watch &amp; Bedside Haptic Nudge feature, SnoreCatcher requests local notification permission solely to schedule on-device replaceable alerts (identifier <code>com.snorecatcher.snore_nudge</code>) that watchOS natively mirrors as a gentle wrist vibration while your iPhone is locked. No remote push notification servers or APNs device tokens are used.
           </p>
         </section>
 
         <section class="legal-section">
-          <h2>6. Contact Us</h2>
+          <h2>5. In-App Purchases, Advertising &amp; Consent (GDPR / ATT)</h2>
+          <ul>
+            <li><strong>Lifetime PRO Ad-SDK Bypass:</strong> Purchases of <code>SnoreCatcher Lifetime PRO</code> (<code>com.snorecatcher.lifetime</code>) are processed directly by Apple via StoreKit 2. We never access your payment card details. For Lifetime PRO users, SnoreCatcher completely skips Google UMP, ATT prompts, and Google AdMob SDK initialization at launch.</li>
+            <li><strong>Free Tier Advertising (Google AdMob):</strong> To keep core snoring detection free, non-PRO users may see banner, muted interstitial, or user-initiated rewarded video ads (for the 24-hour PRO pass) powered by Google Mobile Ads SDK.</li>
+            <li><strong>Consent &amp; App Tracking Transparency (<code>NSUserTrackingUsageDescription</code>):</strong> In applicable regions (including the EEA and UK), we present Google's User Messaging Platform (UMP) consent form prior to ad loading, followed by Apple's ATT prompt where applicable. Declining tracking never restricts core sleep monitoring features.</li>
+            <li><strong>Authorized Digital Sellers:</strong> Verified publisher records are published at <a href="app-ads.txt" class="inline-link">app-ads.txt</a>, and Google's data practices are governed by <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" class="inline-link">Google's Advertising Privacy Policy</a>.</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>6. Your Sovereignty &amp; Data Deletion</h2>
           <p>
-            If you have questions, feedback, or concerns regarding this Privacy Policy, please contact the developer directly at:
+            Because we maintain zero remote servers or accounts, you hold 100% physical control over your data. You can delete individual audio clips, clear sleep sessions, revoke Microphone or Apple Health access in <strong>iOS Settings &rarr; Privacy &amp; Security</strong>, or erase all local app data permanently by uninstalling SnoreCatcher.
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>7. Contact Us</h2>
+          <p>
+            For any privacy questions, data inquiries, or support requests, please contact the developer directly:
           </p>
           <p>
-            <strong>Official Support Email:</strong> <a href="mailto:fangdev1063@gmail.com" style="color: var(--accent-cyan);">fangdev1063@gmail.com</a>
+            <strong>Official Support Email:</strong> <a href="mailto:fangdev1063@gmail.com" class="inline-link">fangdev1063@gmail.com</a>
+          </p>
+        </section>
+      </div>
+
+      <!-- Simplified Chinese Legal Content -->
+      <div class="legal-card" id="contentZh" style="display: none;">
+        <h1>隐私政策 (Privacy Policy)</h1>
+        <span class="legal-date">生效与最近更新日期：2026 年 11 月 15 日 · 适用版本 v1.0.7</span>
+
+        <div class="highlight-box">
+          <strong>核心隐私承诺：您的睡眠录音与健康体征数据绝不离开手机。</strong><br>
+          所有夜间声学 AI 分类、AAC 音频片段、Apple 健康（HealthKit）生理指标及一页式临床就诊 PDF 报告均 <strong>100% 在您的 iPhone 或 iPad 本地应用沙盒内处理与存储</strong>。我们不设任何云端业务服务器，也无需注册任何账号。
+        </div>
+
+        <section class="legal-section">
+          <h2>1. 概述</h2>
+          <p>
+            SnoreCatcher（中文名“鼾声捕手”，App Store 英文名“Snore Detector: Sleep Recorder”，Bundle ID: <code>fangdev.SnoreCatcher</code>）采用严格的“端侧隐私优先”架构设计。本隐私政策详细说明应用申请的系统权限、本地数据处理机制以及第三方广告合规细则。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>2. 麦克风音频处理与本地沙盒存储</h2>
+          <ul>
+            <li><strong>端侧离线声学分析 (<code>NSMicrophoneUsageDescription</code>)：</strong> 麦克风音频流仅用于通过 Apple 原生 <code>SoundAnalysis</code> 机器学习框架与 Accelerate 硬件加速实时或晨间离线识别打鼾、梦话、夜间咳嗽及疑似呼吸停顿。</li>
+            <li><strong>本地存储与 iCloud 云备份排除：</strong> 触发保存的录音片段采用 AAC（<code>.m4a</code>）编码保存在设备私有沙盒 <code>Documents/</code> 目录中，并强制标记 <code>isExcludedFromBackup = true</code>，确保私密卧室音频绝不会被自动上传至 iCloud 云备份。</li>
+            <li><strong>7 天滚动自动清理：</strong> 默认保留最近 7 天的睡眠记录并自动清理过期片段以节省空间；您也可随时在应用内左滑删除单条录音或清空历史会话。</li>
+            <li><strong>用户主动导出：</strong> 原始音频文件与一页式就诊 PDF 报告（基于原生 <code>PDFKit</code> 100% 离线渲染）仅在您亲自点击系统“分享 / 打印”面板时才会由您支配导出。</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>3. Apple 健康 (HealthKit) 数据与绝对隔离承诺</h2>
+          <p>
+            仅当您在 iOS 系统标准 HealthKit 授权弹窗中主动授予权限后，SnoreCatcher 才会读取或写入相关健康数据：
+          </p>
+          <ul>
+            <li><strong>读取数据类型 (<code>NSHealthShareUsageDescription</code>)：</strong> 夜间心率、血氧饱和度（SpO2）、睡眠分期（深睡、核心睡眠、REM 快速眼动、清醒）及呼吸频率，仅用于在本地会话详情页展示生理指标并与声学呼吸暂停事件进行时间戳交叉比对。</li>
+            <li><strong>写入数据类型 (<code>NSHealthUpdateUsageDescription</code>)：</strong> 当开启自动同步且单次监测满 60 秒时，向系统“健康”写入卧床睡眠时长与识别到的夜间咳嗽事件（<code>HKCategoryTypeIdentifierCoughing</code>）。</li>
+            <li><strong>App Store 准则 5.1.1(v) 严格隔离保证：</strong> 所有 HealthKit 健康数据 <strong>绝不传出您的设备</strong>，<strong>绝不上传任何外部服务器</strong>，且与 <strong>Google AdMob 等任何广告、统计或第三方 SDK 完全物理隔离，绝不用于广告画像或商业用途</strong>。</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>4. 本地通知与 Apple Watch 腕部震动镜像</h2>
+          <p>
+            当您开启“Apple Watch 与枕边震动微唤醒”功能时，应用仅使用系统本地通知框架（单一可覆盖标识 <code>com.snorecatcher.snore_nudge</code>）在锁屏监测到打鼾时触发 watchOS 原生手腕微震提醒。本应用未接入任何远程推送服务器，不收集任何推送设备令牌（Device Token）。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>5. 应用内购买、广告服务与隐私同意 (GDPR / ATT)</h2>
+          <ul>
+            <li><strong>终身版 PRO 纯净零广告直通：</strong> <code>SnoreCatcher 终身版 PRO</code>（<code>com.snorecatcher.lifetime</code>）通过 Apple StoreKit 2 原生结算，我们无法接触任何支付凭据。已解锁终身版 PRO 的用户在应用启动时将完全跳过 UMP、ATT 弹窗及 Google AdMob SDK 初始化。</li>
+            <li><strong>免费版广告支持 (Google AdMob)：</strong> 为维持基础功能永久免费，未解锁 PRO 的免费用户可能会看到由 Google AdMob 提供的底部横幅广告、静音插屏广告或您主动点击观看的激励视频（用于免费兑换 24 小时高级通行证）。</li>
+            <li><strong>隐私合规与追踪透明度 (<code>NSUserTrackingUsageDescription</code>)：</strong> 遵循欧盟 GDPR（Google UMP 框架）与 Apple 应用追踪透明度（ATT）规范，您可自由拒绝个性化广告追踪，绝不影响任何核心打鼾监测功能。</li>
+            <li><strong>授权数字卖家声明：</strong> 我们在网站根目录公开 <a href="app-ads.txt" class="inline-link">app-ads.txt</a> 验证文件；Google 广告数据处理详见 <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener" class="inline-link">Google 广告隐私政策</a>。</li>
+          </ul>
+        </section>
+
+        <section class="legal-section">
+          <h2>6. 您的数据主权与删除方式</h2>
+          <p>
+            由于所有数据均保存在本地设备中，您拥有 100% 的控制权。您可随时在应用内删除录音、在 <strong>iOS 设置 &rarr; 隐私与安全性</strong> 中撤回麦克风或健康权限，或通过卸载应用立即彻底清除全部本地沙盒数据。
+          </p>
+        </section>
+
+        <section class="legal-section">
+          <h2>7. 联系我们</h2>
+          <p>
+            如您对本隐私政策有任何疑问、建议或合规垂询，请直接发送邮件联系开发者：
+          </p>
+          <p>
+            <strong>官方支持邮箱：</strong> <a href="mailto:fangdev1063@gmail.com" class="inline-link">fangdev1063@gmail.com</a>
           </p>
         </section>
       </div>
@@ -168,9 +185,41 @@
   <footer>
     <div class="container">
       <div class="footer-bottom">
-        &copy; 2026 SnoreCatcher · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a> · <a href="app-ads.txt">app-ads.txt</a>
+        <span>&copy; 2026 SnoreCatcher · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a> · <a href="app-ads.txt">app-ads.txt</a></span>
+        <span>Support: <a href="mailto:fangdev1063@gmail.com">fangdev1063@gmail.com</a></span>
       </div>
     </div>
   </footer>
+
+  <script>
+    const navI18n = {
+      en: { navHome: "Home", navFeatures: "Features", navPrivacy: "Privacy Policy", navTerms: "Terms of Use", ctaStore: "App Store" },
+      zh: { navHome: "返回首页", navFeatures: "核心功能", navPrivacy: "隐私政策", navTerms: "服务条款", ctaStore: "前往商店" }
+    };
+    let currentLang = 'en';
+    const langBtn = document.getElementById('langToggle');
+    const contentEn = document.getElementById('contentEn');
+    const contentZh = document.getElementById('contentZh');
+
+    function setLang(lang) {
+      currentLang = lang;
+      try { localStorage.setItem('sc_lang', lang); } catch (e) {}
+      langBtn.textContent = lang === 'en' ? '中文' : 'English';
+      contentEn.style.display = lang === 'en' ? 'block' : 'none';
+      contentZh.style.display = lang === 'zh' ? 'block' : 'none';
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const k = el.getAttribute('data-i18n');
+        if (navI18n[lang][k]) el.textContent = navI18n[lang][k];
+      });
+    }
+
+    langBtn.addEventListener('click', () => setLang(currentLang === 'en' ? 'zh' : 'en'));
+    try {
+      const saved = localStorage.getItem('sc_lang');
+      if (saved === 'zh' || saved === 'en') setLang(saved);
+      else if (navigator.language && navigator.language.toLowerCase().startsWith('zh')) setLang('zh');
+    } catch (e) {}
+  </script>
 </body>
 </html>
