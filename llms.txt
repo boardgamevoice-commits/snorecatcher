@@ -1,0 +1,55 @@
+# Snore Detector: Sleep Recorder
+
+> 100% offline locked-screen snore, sleep-talk, and breathing pause recorder for iPhone & iPad with Apple Watch SpO2 correlation, 1-page doctor PDF reports, Remedy A/B analytics, and a $2.99 one-time Lifetime PRO option.
+
+Snore Detector (SnoreCatcher) is an iPhone and iPad sleep recorder app that detects snoring, sleep talking, coughing, and nocturnal breathing pauses 100% offline — with Apple Watch vitals correlation, Siri Shortcuts, and a one-time Lifetime PRO option instead of monthly subscriptions.
+
+## Key features
+
+- Locked-Screen Overnight Recording + Siri Shortcuts: Start monitoring manually, by voice with Siri, or automatically with iOS Sleep Focus, then lock your iPhone.
+- Clear Morning Audio Playback: Scrub interactive waveforms, skip silence automatically, filter AC/fan hum with a 110Hz noise reducer, and boost quiet clips up to 8x (+18 dB).
+- 9:16 Highlight Video Card & Audio Reel: Synthesize tonight's top snores and sleep talk into a dynamic waveform MP4 video card or noise-reduced M4A audio mix on device.
+- Remedy & Sleep Trigger A/B Insights: Log Nasal Strips, Side Pillow, Mouthpiece, Congestion, or Alcohol for free, and quantify exact Snore Score (0–100) and decibel reductions over multi-week trends.
+- Permanent Starred Clips Vault: Pin memorable sleep-talk or breathing pause clips so they are permanently protected from rolling storage cleanup.
+- Apple Watch Vitals & Gentle Haptic Nudge: Sync Apple Health to align heart rate spikes, blood oxygen (SpO2) dips, respiratory rate, and sleep stages onto your acoustic timeline, plus optional wrist vibration when loud snoring is detected.
+- 1-Page Doctor Consultation PDF Report: Export structured acoustic, vitals, and logged-remedy summaries in 9 languages for ENT or sleep clinic visits.
+- No Expensive Subscriptions: Core tracking is free. Unlock a free 24-hour Pro pass anytime via a short video, or pay once ($2.99) for Lifetime PRO with Apple Family Sharing.
+
+## Facts
+
+- Category: Health And Fitness
+- Platform: iPhone / iPad
+
+## Links
+
+- [Download on the App Store](https://apps.apple.com/app/id6757622696)
+- [Official website](https://snorecatcher.netlify.app/)
+- [Privacy policy](https://snorecatcher.netlify.app/privacy)
+- [Terms of use](https://snorecatcher.netlify.app/terms)
+- [Support](https://snorecatcher.netlify.app)
+
+## FAQ
+
+### Is there an offline snore recorder app for iPhone that works with the screen locked?
+
+Yes. SnoreCatcher records and classifies snoring, sleep talking, coughing, and nocturnal breathing pauses 100% offline on iPhone and iPad while the screen stays locked overnight. No account, internet connection, or cloud upload is required, and all `.m4a` audio clips remain stored locally inside your device sandbox.
+
+### Does SnoreCatcher require a monthly subscription?
+
+No. Core overnight snore recording, waveform playback, and pre-sleep remedy logging are free. You can unlock a 24-hour Pro pass for free by watching one short video, or unlock Lifetime PRO forever for a one-time $2.99 purchase with Apple Family Sharing for up to 5 family members.
+
+### Can SnoreCatcher correlate snoring with Apple Watch blood oxygen (SpO2) and heart rate?
+
+Yes. Through Apple Health integration on device, SnoreCatcher overlays nocturnal Apple Watch heart rate spikes, blood oxygen (SpO2) desaturations, respiratory rate, and REM or Deep sleep stages onto your acoustic timeline, and supports gentle Apple Watch wrist haptic nudges when snoring is detected.
+
+### Can I export a sleep and snoring summary PDF for my doctor?
+
+SnoreCatcher generates a structured 1-page Doctor Consultation PDF Report directly on your device in 9 languages (English, Simplified and Traditional Chinese, Japanese, Korean, German, French, Spanish, and Portuguese), summarizing your Snore Score, 7-night baseline, logged remedies, and Apple Watch vitals.
+
+### How can I test whether nasal strips or a side-sleeping pillow reduce my snoring?
+
+You can tag each night with 12 built-in remedies and triggers such as Nasal Strips, Side Pillow, Mouthpiece, Congestion, or Alcohol. SnoreCatcher compares tagged nights against untagged baseline nights to calculate percentage changes in Snore Score and peak decibels over 7-day, 30-day, and all-time trends.
+
+### Is SnoreCatcher a medical diagnostic device for sleep apnea?
+
+No. SnoreCatcher is an informational wellness and acoustic self-tracking utility, not a medical device, and does not diagnose obstructive sleep apnea or any medical condition. Acoustic breathing-pause flags and PDF summaries are for personal reference only; always consult a licensed physician for clinical evaluation.

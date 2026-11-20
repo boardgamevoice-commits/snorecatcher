@@ -4,7 +4,7 @@ Official landing page, interactive multi-modal acoustic lab, privacy policy, and
 
 - **Production Domain**: https://snorecatcher.netlify.app
 - **App Store**: https://apps.apple.com/app/id6757622696
-- **Synchronized App Version**: `v1.0.7 (Build 8)` · iOS 17.0+
+- **Synchronized App Version**: `v1.0.8 (Build 10)` · iOS 17.0+
 
 ## Architecture
 

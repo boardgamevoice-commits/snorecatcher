@@ -14,9 +14,88 @@
   <meta name="twitter:title" content="SnoreCatcher — Privacy-First Night Snoring &amp; Vitals Monitor">
   <meta name="twitter:description" content="100% on-device SoundAnalysis ML, Apple Watch SpO2 &amp; HR correlation, and 1-page Doctor PDF reports. Zero cloud uploads.">
   <meta name="twitter:image" content="https://snorecatcher.netlify.app/assets/app_icon.png">
+  <meta name="apple-itunes-app" content="app-id=6757622696">
   <link rel="icon" type="image/png" href="assets/app_icon.png">
   <link rel="apple-touch-icon" href="assets/app_icon.png">
   <link rel="stylesheet" href="index.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "MobileApplication",
+        "name": "Snore Detector: Sleep Recorder",
+        "description": "Snore Detector (SnoreCatcher) is an iPhone and iPad sleep recorder app that detects snoring, sleep talking, coughing, and nocturnal breathing pauses 100% offline — with Apple Watch vitals correlation, Siri Shortcuts, and a one-time Lifetime PRO option instead of monthly subscriptions.",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "inLanguage": "en-US",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "softwareVersion": "1.0.8",
+        "downloadUrl": "https://apps.apple.com/app/id6757622696",
+        "installUrl": "https://apps.apple.com/app/id6757622696",
+        "url": "https://snorecatcher.netlify.app/",
+        "image": "https://snorecatcher.netlify.app/assets/app_icon.png"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is there an offline snore recorder app for iPhone that works with the screen locked?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. SnoreCatcher records and classifies snoring, sleep talking, coughing, and nocturnal breathing pauses 100% offline on iPhone and iPad while the screen stays locked overnight. No account, internet connection, or cloud upload is required, and all `.m4a` audio clips remain stored locally inside your device sandbox."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does SnoreCatcher require a monthly subscription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Core overnight snore recording, waveform playback, and pre-sleep remedy logging are free. You can unlock a 24-hour Pro pass for free by watching one short video, or unlock Lifetime PRO forever for a one-time $2.99 purchase with Apple Family Sharing for up to 5 family members."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can SnoreCatcher correlate snoring with Apple Watch blood oxygen (SpO2) and heart rate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Through Apple Health integration on device, SnoreCatcher overlays nocturnal Apple Watch heart rate spikes, blood oxygen (SpO2) desaturations, respiratory rate, and REM or Deep sleep stages onto your acoustic timeline, and supports gentle Apple Watch wrist haptic nudges when snoring is detected."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I export a sleep and snoring summary PDF for my doctor?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SnoreCatcher generates a structured 1-page Doctor Consultation PDF Report directly on your device in 9 languages (English, Simplified and Traditional Chinese, Japanese, Korean, German, French, Spanish, and Portuguese), summarizing your Snore Score, 7-night baseline, logged remedies, and Apple Watch vitals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I test whether nasal strips or a side-sleeping pillow reduce my snoring?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can tag each night with 12 built-in remedies and triggers such as Nasal Strips, Side Pillow, Mouthpiece, Congestion, or Alcohol. SnoreCatcher compares tagged nights against untagged baseline nights to calculate percentage changes in Snore Score and peak decibels over 7-day, 30-day, and all-time trends."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is SnoreCatcher a medical diagnostic device for sleep apnea?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. SnoreCatcher is an informational wellness and acoustic self-tracking utility, not a medical device, and does not diagnose obstructive sleep apnea or any medical condition. Acoustic breathing-pause flags and PDF summaries are for personal reference only; always consult a licensed physician for clinical evaluation."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <!-- Sticky Glassmorphic Header -->
@@ -25,7 +104,7 @@
       <a href="index.html" class="brand-badge">
         <img src="assets/app_icon.png" alt="SnoreCatcher App Icon">
         <span class="brand-name">SnoreCatcher</span>
-        <span class="version-pill">v1.0.7 · iOS 17+</span>
+        <span class="version-pill">v1.0.8 · iOS 17+</span>
       </a>
       <div class="nav-right">
         <ul class="nav-links">
@@ -431,6 +510,42 @@
               <a href="https://www.nhlbi.nih.gov/health/sleep-apnea" target="_blank" rel="noopener" class="inline-link">NIH NHLBI — Sleep Apnea Guide &nearr;</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Citable FAQ Section (Aligned with FAQPage JSON-LD) -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FREQUENTLY ASKED QUESTIONS</span>
+          <h2>Questions About Offline Snore &amp; Sleep Tracking</h2>
+        </div>
+        <div class="faq-grid">
+          <details class="faq-item" open>
+            <summary>Is there an offline snore recorder app for iPhone that works with the screen locked?</summary>
+            <p>Yes. SnoreCatcher records and classifies snoring, sleep talking, coughing, and nocturnal breathing pauses 100% offline on iPhone and iPad while the screen stays locked overnight. No account, internet connection, or cloud upload is required, and all `.m4a` audio clips remain stored locally inside your device sandbox.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does SnoreCatcher require a monthly subscription?</summary>
+            <p>No. Core overnight snore recording, waveform playback, and pre-sleep remedy logging are free. You can unlock a 24-hour Pro pass for free by watching one short video, or unlock Lifetime PRO forever for a one-time $2.99 purchase with Apple Family Sharing for up to 5 family members.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can SnoreCatcher correlate snoring with Apple Watch blood oxygen (SpO2) and heart rate?</summary>
+            <p>Yes. Through Apple Health integration on device, SnoreCatcher overlays nocturnal Apple Watch heart rate spikes, blood oxygen (SpO2) desaturations, respiratory rate, and REM or Deep sleep stages onto your acoustic timeline, and supports gentle Apple Watch wrist haptic nudges when snoring is detected.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I export a sleep and snoring summary PDF for my doctor?</summary>
+            <p>SnoreCatcher generates a structured 1-page Doctor Consultation PDF Report directly on your device in 9 languages (English, Simplified and Traditional Chinese, Japanese, Korean, German, French, Spanish, and Portuguese), summarizing your Snore Score, 7-night baseline, logged remedies, and Apple Watch vitals.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How can I test whether nasal strips or a side-sleeping pillow reduce my snoring?</summary>
+            <p>You can tag each night with 12 built-in remedies and triggers such as Nasal Strips, Side Pillow, Mouthpiece, Congestion, or Alcohol. SnoreCatcher compares tagged nights against untagged baseline nights to calculate percentage changes in Snore Score and peak decibels over 7-day, 30-day, and all-time trends.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is SnoreCatcher a medical diagnostic device for sleep apnea?</summary>
+            <p>No. SnoreCatcher is an informational wellness and acoustic self-tracking utility, not a medical device, and does not diagnose obstructive sleep apnea or any medical condition. Acoustic breathing-pause flags and PDF summaries are for personal reference only; always consult a licensed physician for clinical evaluation.</p>
+          </details>
         </div>
       </div>
     </section>
